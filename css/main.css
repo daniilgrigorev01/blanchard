@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("/fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/opensans-semibold-webfont.woff2") format("woff2"),
+    url("/fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/opensans-bold-webfont.woff2") format("woff2"),
+    url("/fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --main-color: #fff;
+  --secondary-color: #000;
+  --background-color-menu: rgba(0, 0, 0, 0.9);
+  --focus-color: #9d5cd0;
+  --active-color: #7943a4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  line-height: 1;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link-reset {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+.container {
+  padding: 0 15px;
+}

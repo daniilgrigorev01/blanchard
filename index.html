@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blanchard - картинная галерея</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="/img/favicon/site.webmanifest"/>
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico"/>
+    <meta name="apple-mobile-web-app-title" content="Blanchard"/>
+    <meta name="application-name" content="Blanchard"/>
+    <meta name="msapplication-TileColor" content="#2b5797"/>
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml"/>
+    <meta name="theme-color" content="#000000"/>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="/libs/normalize.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/header.css">
+
+    <!-- JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script defer src="/js/header.js"></script>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__top header-top container">
+        <button class="btn-reset header-top__btn-open-menu" type="button" aria-label="Открыть меню">
+          <span></span>
+        </button>
+        <nav class="header-top__nav header-top-nav" data-simplebar>
+          <button class="btn-reset header-top-nav__btn-close-menu" type="button" aria-label="Закрыть меню">
+            <span></span>
+          </button>
+          <ul class="ul-reset header-top-nav__menu">
+            <li class="header-top-nav__item">
+              <a href="#about" class="link-reset header-top-nav__link">
+                <span>О&nbsp;нас</span>
+              </a>
+            </li>
+            <li class="header-top-nav__item">
+              <a href="#gallery" class="link-reset header-top-nav__link">
+                <span>Галерея</span>
+              </a>
+            </li>
+            <li class="header-top-nav__item">
+              <a href="#catalog" class="link-reset header-top-nav__link">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li class="header-top-nav__item">
+              <a href="#events" class="link-reset header-top-nav__link">
+                <span>События</span>
+              </a>
+            </li>
+            <li class="header-top-nav__item">
+              <a href="#projects" class="link-reset header-top-nav__link">
+                <span>Проекты</span>
+              </a>
+            </li>
+            <li class="header-top-nav__item">
+              <a href="#contacts" class="link-reset header-top-nav__link">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="link-reset header-top__login header-top-login">
+            <span class="header-top-login__arrow-wrapper">
+              <svg width="14" height="9" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="white"/>
+              </svg>
+            </span>
+            Войти
+          </a>
+        </nav>
+        <a href="#" class="link-reset logo header__logo">
+          <img srcset="/img/logo@2x.png 2x" src="/img/logo@1x.png" alt="Blanchard - картинная галерея">
+        </a>
+        <button class="btn-reset header-top__btn-open-search" type="button" aria-label="Открыть поиск по сайту">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"/>
+          </svg>
+        </button>
+        <div class="header-top__form-wrapper">
+          <form class="header-top__form-search header-top-form-search" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <button class="btn-reset header-top-form-search__btn-search" type="submit" aria-label="Начать поиск по сайту">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"/>
+              </svg>
+            </button>
+            <input class="header-top-form-search__input-search" type="text" placeholder="Поиск по сайту" name="search" aria-label="Поиск по сайту">
+            <button class="btn-reset header-top-form-search__btn-close-search" type="button" aria-label="Закрыть поиск по сайту">
+              <span></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="main-title visually-hidden">Картинная галерея - Blanchard</h1>
+    </main>
+  </body>
+</html>
