@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanchard - картинная галерея</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png"/>
-    <link rel="manifest" href="/img/favicon/site.webmanifest"/>
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico"/>
-    <meta name="apple-mobile-web-app-title" content="Blanchard"/>
-    <meta name="application-name" content="Blanchard"/>
-    <meta name="msapplication-TileColor" content="#2b5797"/>
-    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml"/>
-    <meta name="theme-color" content="#000000"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Blanchard">
+    <meta name="application-name" content="Blanchard">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
 
     <!-- Style -->
-    <link rel="stylesheet" href="/libs/normalize.css"/>
+    <link rel="stylesheet" href="/libs/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
-    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
 
     <!-- JavaScript -->
@@ -77,11 +77,11 @@
                 <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="white"/>
               </svg>
             </span>
-            Войти
+            <span>Войти</span>
           </a>
         </nav>
-        <a href="#" class="link-reset logo header__logo">
-          <img srcset="/img/logo@2x.png 2x" src="/img/logo@1x.png" alt="Blanchard - картинная галерея">
+        <a class="link-reset logo header__logo" tabindex="0">
+          <img src="/img/logo.png" alt="Blanchard - картинная галерея">
         </a>
         <button class="btn-reset header-top__btn-open-search" type="button" aria-label="Открыть поиск по сайту">
           <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,12 +95,170 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"/>
               </svg>
             </button>
-            <input class="header-top-form-search__input-search" type="text" placeholder="Поиск по сайту" name="search" aria-label="Поиск по сайту">
+            <input class="header-top-form-search__input-search" type="text" name="search" aria-label="Поиск по сайту">
             <button class="btn-reset header-top-form-search__btn-close-search" type="button" aria-label="Закрыть поиск по сайту">
               <span></span>
             </button>
           </form>
         </div>
+      </div>
+      <div class="header__bottom header-bottom container">
+        <ul class="ul-reset header-bottom__list header-bottom-list">
+          <li class="header-bottom-list__item">
+            <button class="btn-reset header-bottom-list__btn" data-path="one">
+              <strong class="header-bottom-list__title">Реализм</strong>
+            </button>
+            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="one">
+              <ul class="ul-reset header-bottom-list-dropdown-menu__list">
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Тинторетто</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Фридрих</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Леонардо</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Верроккьо</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-bottom-list__item">
+            <button class="btn-reset header-bottom-list__btn" data-path="two">
+              <strong class="header-bottom-list__title">Импрессионизм</strong>
+            </button>
+            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="two">
+              <ul class="ul-reset header-bottom-list-dropdown-menu__list">
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Моне</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Сислей</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Мане</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Ренуар</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-bottom-list__item">
+            <button class="btn-reset header-bottom-list__btn" data-path="three">
+              <strong class="header-bottom-list__title">Постимпрессионизм</strong>
+            </button>
+            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="three">
+              <ul class="ul-reset header-bottom-list-dropdown-menu__list">
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Ван Гог</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Сезанн</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Гоген</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Сёра</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-bottom-list__item">
+            <button class="btn-reset header-bottom-list__btn" data-path="four">
+              <strong class="header-bottom-list__title">Авангард</strong>
+            </button>
+            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="four">
+              <ul class="ul-reset header-bottom-list-dropdown-menu__list">
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Кандинский</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Маринетти</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Малевич</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Пикассо</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header-bottom-list__item">
+            <button class="btn-reset header-bottom-list__btn" data-path="five">
+              <strong class="header-bottom-list__title">Футуризм</strong>
+            </button>
+            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="five">
+              <ul class="ul-reset header-bottom-list-dropdown-menu__list">
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Карра</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Прателла</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Северини</span>
+                  </a>
+                </li>
+                <li class="header-bottom-list-dropdown-menu__item">
+                  <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
+                    <span>Балла</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <form class="header-bottom__form-search header-bottom-form-search" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <button class="btn-reset header-bottom-form-search__btn-search" type="submit" aria-label="Начать поиск по сайту">
+            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"/>
+            </svg>
+          </button>
+          <input class="header-bottom-form-search__input" type="text" name="search" placeholder="Поиск по сайту">
+        </form>
       </div>
     </header>
     <main class="main">

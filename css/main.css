@@ -31,12 +31,18 @@
   --background-color-menu: rgba(0, 0, 0, 0.9);
   --focus-color: #9d5cd0;
   --active-color: #7943a4;
+  --hover-color: #c283f3;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
 }
 
 .btn-reset {
@@ -70,6 +76,7 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   overflow: hidden;
 }
@@ -85,7 +92,23 @@
 }
 
 @media (min-width: 768px) {
+  .body {
+    font-size: 16px;
+  }
+
   .container {
     padding: 0 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    padding: 0 160px;
   }
 }
