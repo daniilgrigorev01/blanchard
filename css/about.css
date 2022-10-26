@@ -1,0 +1,49 @@
+.about {
+  position: relative;
+  left: 0;
+  top: 341px;
+}
+
+.about__title {
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #333;
+}
+
+.about__text {
+  font-size: 14px;
+  line-height: 2em;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  .about {
+    top: 713px;
+  }
+
+  .about__title {
+    margin-bottom: 21px;
+    font-size: 48px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    top: 676px;
+    width: 95%;
+  }
+
+  .about__title {
+    margin-bottom: 21px;
+    font-size: 48px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+}

@@ -94,8 +94,9 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 200px;
+  margin-bottom: 20px;
   padding: 14px 0;
+  width: 200px;
   border-radius: 100px;
   font-size: 12px;
   font-weight: 700;
@@ -260,19 +261,20 @@
   }
 
   .hero__content {
-    margin-top: 237px;
+    margin-top: 224px;
     padding: 0 160px;
     width: 50%;
   }
 
   .hero__title {
-    margin-bottom: 4px;
-    line-height: 1.6em;
+    margin-bottom: -10px;
+    line-height: 1.5em;
   }
 
   .hero__text {
-    margin-bottom: 94px;
+    margin-bottom: 92px;
     padding-right: 110px;
+    line-height: 1.6em;
   }
 }
 
