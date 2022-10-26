@@ -71,7 +71,7 @@
 
 .header-top__nav {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   left: 0;
   padding-top: 14px;
@@ -81,15 +81,8 @@
   height: 100vh;
   background-color: var(--background-color-menu);
   overflow-y: auto;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .simplebar-content {
@@ -108,9 +101,6 @@
 }
 
 .is-active.header-top__nav {
-  visibility: visible;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -184,7 +174,7 @@
 
 .header-top-nav__link span {
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 
 .header-top-nav__link::before {
@@ -310,7 +300,6 @@
 .header__logo img {
   display: block;
   width: 97px;
-  cursor: pointer;
 }
 
 .header-top__btn-open-search {
@@ -342,7 +331,6 @@
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
@@ -351,7 +339,6 @@
 }
 
 .is-active.header-top__form-wrapper {
-  visibility: visible;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -658,10 +645,16 @@
     height: auto;
     background: none;
     overflow: hidden;
-    visibility: visible;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+
+  .simplebar-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .header-top-nav__btn-close-menu {
@@ -701,7 +694,7 @@
   }
 
   .header-top__login span {
-    z-index: 2;
+    z-index: 10;
   }
 
   .header-top__login::before {
@@ -765,6 +758,8 @@
   }
 
   .header__bottom {
+    position: relative;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -872,7 +867,7 @@
 
   .header-bottom-list__btn strong {
     position: relative;
-    z-index: 2;
+    z-index: 10;
   }
 
   .header-bottom-list__title {
@@ -1082,7 +1077,7 @@
 
   .header-bottom-list-dropdown-menu__link span {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1232,6 +1227,26 @@
 
   .header-bottom-form-search__input {
     font-size: 18px;
+  }
+}
+
+@keyframes navOpen {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes navClose {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }
 
