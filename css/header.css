@@ -1,3 +1,8 @@
+.header {
+  position: relative;
+  z-index: 10;
+}
+
 .header__top {
   position: relative;
   display: -webkit-box;
