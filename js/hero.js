@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiperHero = new Swiper(".hero__swiper", {
   loop: true,
   allowTouchMove: false,
   speed: 5000,

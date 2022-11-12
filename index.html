@@ -21,15 +21,19 @@
     <link rel="stylesheet" href="/libs/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/gallery.css">
 
     <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script defer src="/js/header.js"></script>
     <script defer src="/js/hero.js"></script>
+    <script defer src="/js/gallery.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -48,27 +52,27 @@
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="" class="link-reset header-top-nav__link">
+              <a href="#gallery" class="link-reset header-top-nav__link">
                 <span>Галерея</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="" class="link-reset header-top-nav__link">
+              <a href="#catalog" class="link-reset header-top-nav__link">
                 <span>Каталог</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="" class="link-reset header-top-nav__link">
+              <a href="#events" class="link-reset header-top-nav__link">
                 <span>События</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="" class="link-reset header-top-nav__link">
+              <a href="#projects" class="link-reset header-top-nav__link">
                 <span>Проекты</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="" class="link-reset header-top-nav__link">
+              <a href="#contacts" class="link-reset header-top-nav__link">
                 <span>Контакты</span>
               </a>
             </li>
@@ -82,7 +86,7 @@
             <span>Войти</span>
           </a>
         </nav>
-        <a class="link-reset logo header__logo">
+        <a class="link-reset header__logo">
           <img src="/img/logo.png" alt="Blanchard - картинная галерея">
         </a>
         <button class="btn-reset header-top__btn-open-search" type="button" aria-label="Открыть поиск по сайту">
@@ -110,7 +114,7 @@
             <button class="btn-reset header-bottom-list__btn" data-path="one">
               <strong class="header-bottom-list__title">Реализм</strong>
             </button>
-            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="one">
+            <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="one">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
                   <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
@@ -139,7 +143,7 @@
             <button class="btn-reset header-bottom-list__btn" data-path="two">
               <strong class="header-bottom-list__title">Импрессионизм</strong>
             </button>
-            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="two">
+            <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="two">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
                   <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
@@ -168,7 +172,7 @@
             <button class="btn-reset header-bottom-list__btn" data-path="three">
               <strong class="header-bottom-list__title">Постимпрессионизм</strong>
             </button>
-            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="three">
+            <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="three">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
                   <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
@@ -197,7 +201,7 @@
             <button class="btn-reset header-bottom-list__btn" data-path="four">
               <strong class="header-bottom-list__title">Авангард</strong>
             </button>
-            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="four">
+            <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="four">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
                   <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
@@ -226,7 +230,7 @@
             <button class="btn-reset header-bottom-list__btn" data-path="five">
               <strong class="header-bottom-list__title">Футуризм</strong>
             </button>
-            <div class="header-bottom-list__dropdown-menu" data-simplebar data-target="five">
+            <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="five">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
                   <a href="" class="link-reset header-bottom-list-dropdown-menu__link">
@@ -267,7 +271,7 @@
     <main class="main">
       <h1 class="main-title visually-hidden">Картинная галерея - Blanchard</h1>
       <section class="hero">
-        <div class="swiper">
+        <div class="hero__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide slide-1"></div>
             <div class="swiper-slide slide-2"></div>
@@ -283,6 +287,44 @@
       <section class="about container" id="about">
         <h2 class="about__title">О&nbsp;нас</h2>
         <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
+      </section>
+      <section class="gallery container" id="gallery">
+        <h2 class="gallery__title">Галерея</h2>
+        <div class="gallery__select gallery-select">
+          <label class="gallery-select__label" for="gallery-filter">Фильтр:</label>
+          <select class="gallery-select__choices" name="gallery-filter" id="gallery-filter">
+            <option value="painting">Живопись</option>
+            <option value="drawing">Рисунок</option>
+            <option value="sculpture">Скульптура</option>
+          </select>
+        </div>
+        <ul class="ul-reset gallery__checkbox-list gallery-checkbox-list">
+          <li class="gallery-checkbox-list__item">
+            <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XIX century" id="XIX">
+            <label class="gallery-checkbox-list__label" for="XIX">XIX век</label>
+          </li>
+          <li class="gallery-checkbox-list__item">
+            <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XX century" id="XX" checked>
+            <label class="gallery-checkbox-list__label" for="XX">XX век</label>
+          </li>
+          <li class="gallery-checkbox-list__item">
+            <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="modernity" id="modernity">
+            <label class="gallery-checkbox-list__label" for="modernity">Современность</label>
+          </li>
+        </ul>
+        <div class="gallery__swiper">
+          <div class="swiper-wrapper">
+            <a href="" class="swiper-slide slide-1"></a>
+            <a href="" class="swiper-slide slide-2"></a>
+            <a href="" class="swiper-slide slide-3"></a>
+            <a href="" class="swiper-slide slide-4"></a>
+            <a href="" class="swiper-slide slide-5"></a>
+            <a href="" class="swiper-slide slide-6"></a>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
     </main>
   </body>

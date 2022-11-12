@@ -88,6 +88,10 @@
   color: var(--main-color);
 }
 
+.main {
+  background-color: #fff;
+}
+
 .container {
   padding: 0 15px;
 }
