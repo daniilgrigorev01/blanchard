@@ -289,29 +289,31 @@
         <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
       </section>
       <section class="gallery container" id="gallery">
-        <h2 class="gallery__title">Галерея</h2>
-        <div class="gallery__select gallery-select">
-          <label class="gallery-select__label" for="gallery-filter">Фильтр:</label>
-          <select class="gallery-select__choices" name="gallery-filter" id="gallery-filter">
-            <option value="painting">Живопись</option>
-            <option value="drawing">Рисунок</option>
-            <option value="sculpture">Скульптура</option>
-          </select>
+        <div class="gallery__top">
+          <h2 class="gallery__title">Галерея</h2>
+          <div class="gallery__select gallery-select">
+            <label class="gallery-select__label" for="gallery-filter">Фильтр:</label>
+            <select class="gallery-select__choices" name="gallery-filter" id="gallery-filter">
+              <option value="painting">Живопись</option>
+              <option value="drawing">Рисунок</option>
+              <option value="sculpture">Скульптура</option>
+            </select>
+          </div>
+          <ul class="ul-reset gallery__checkbox-list gallery-checkbox-list">
+            <li class="gallery-checkbox-list__item">
+              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XIX century" id="XIX">
+              <label class="gallery-checkbox-list__label" for="XIX">XIX век</label>
+            </li>
+            <li class="gallery-checkbox-list__item">
+              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XX century" id="XX" checked>
+              <label class="gallery-checkbox-list__label" for="XX">XX век</label>
+            </li>
+            <li class="gallery-checkbox-list__item">
+              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="modernity" id="modernity">
+              <label class="gallery-checkbox-list__label" for="modernity">Современность</label>
+            </li>
+          </ul>
         </div>
-        <ul class="ul-reset gallery__checkbox-list gallery-checkbox-list">
-          <li class="gallery-checkbox-list__item">
-            <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XIX century" id="XIX">
-            <label class="gallery-checkbox-list__label" for="XIX">XIX век</label>
-          </li>
-          <li class="gallery-checkbox-list__item">
-            <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XX century" id="XX" checked>
-            <label class="gallery-checkbox-list__label" for="XX">XX век</label>
-          </li>
-          <li class="gallery-checkbox-list__item">
-            <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="modernity" id="modernity">
-            <label class="gallery-checkbox-list__label" for="modernity">Современность</label>
-          </li>
-        </ul>
         <div class="gallery__swiper">
           <div class="swiper-wrapper">
             <a href="" class="swiper-slide slide-1"></a>

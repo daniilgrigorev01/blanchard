@@ -136,7 +136,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    min-height: 768px;
+    min-height: 738px;
   }
 
   .hero__swiper .swiper-slide.slide-1 {
@@ -155,7 +155,7 @@
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-top: 208px;
+    margin-top: 181px;
     padding: 0 50px;
   }
 
@@ -245,7 +245,11 @@
 
 @media (min-width: 1920px) {
   .hero {
-    min-height: 800px;
+    min-height: 701px;
+  }
+
+  .hero__swiper {
+    height: 701px;
   }
 
   .hero__swiper .swiper-slide.slide-1 {
@@ -261,7 +265,7 @@
   }
 
   .hero__content {
-    margin-top: 224px;
+    margin-top: 125px;
     padding: 0 160px;
     width: 50%;
   }
