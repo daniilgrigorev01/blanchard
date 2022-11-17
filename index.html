@@ -22,18 +22,22 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/hero.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/css/catalog.css">
 
     <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script defer src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
     <script defer src="/js/header.js"></script>
     <script defer src="/js/hero.js"></script>
     <script defer src="/js/gallery.js"></script>
+    <script defer src="/js/catalog.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -47,33 +51,33 @@
           </button>
           <ul class="ul-reset header-top-nav__menu">
             <li class="header-top-nav__item">
-              <a href="#about" class="link-reset header-top-nav__link">
-                <span>О&nbsp;нас</span>
+              <a href="#about" class="link-reset header-top-nav__link header-top-nav-link">
+                <span class="header-top-nav-link__content">О&nbsp;нас</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="#gallery" class="link-reset header-top-nav__link">
-                <span>Галерея</span>
+              <a href="#gallery" class="link-reset header-top-nav__link header-top-nav-link">
+                <span class="header-top-nav-link__content">Галерея</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="#catalog" class="link-reset header-top-nav__link">
-                <span>Каталог</span>
+              <a href="#catalog" class="link-reset header-top-nav__link header-top-nav-link">
+                <span class="header-top-nav-link__content">Каталог</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="#events" class="link-reset header-top-nav__link">
-                <span>События</span>
+              <a href="#events" class="link-reset header-top-nav__link header-top-nav-link">
+                <span class="header-top-nav-link__content">События</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="#projects" class="link-reset header-top-nav__link">
-                <span>Проекты</span>
+              <a href="#projects" class="link-reset header-top-nav__link header-top-nav-link">
+                <span class="header-top-nav-link__content">Проекты</span>
               </a>
             </li>
             <li class="header-top-nav__item">
-              <a href="#contacts" class="link-reset header-top-nav__link">
-                <span>Контакты</span>
+              <a href="#contacts" class="link-reset header-top-nav__link header-top-nav-link">
+                <span class="header-top-nav-link__content">Контакты</span>
               </a>
             </li>
           </ul>
@@ -284,10 +288,12 @@
           <a href="" class="link-reset hero__link">Подписаться на&nbsp;рассылку</a>
         </div>
       </section>
+
       <section class="about container" id="about">
         <h2 class="about__title">О&nbsp;нас</h2>
         <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.</p>
       </section>
+
       <section class="gallery container" id="gallery">
         <div class="gallery__top">
           <h2 class="gallery__title">Галерея</h2>
@@ -326,6 +332,244 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="container catalog" id="catalog">
+        <h2 class="catalog__title">Каталог</h2>
+        <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.</p>
+        <div class="catalog__accordion catalog-accordion">
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 1400 по 1499 гг</button>
+            </h3>
+            <div class="catalog-accordion__panel">
+              <ul class="ul-reset catalog-accordion__list">
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist">
+                    <span>Бенедетто ди Биндо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist" id="ambrogio">
+                    <span>Бергоньоне, Амброджо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Биссоло, Франческо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Больтраффио, Джованни</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Бонсиньори, Франческо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Боттичини, Рафаэлло</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty" id="bramantino">
+                    <span>Брамантино</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Бреа, Людовико</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Бьяджо д’Антонио Туччи</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Веккьетта</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Андреа Верроккьо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist" id="ghirlandaio">
+                    <span>Доменико Гирландайо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Беноццо Гоццоли</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Граначчи, Франческо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Грегорио ди Чекко</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Джованни да Удине</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Джованни ди Паоло</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Джорджоне</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Парентино, Бернардо</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Пезеллино</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Пьетро Перуджино</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Перуцци, Бальдассаре</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Пизанелло</span>
+                  </a>
+                </li>
+                <li class="catalog-accordion__item">
+                  <a href="" class="link-reset catalog-accordion__artist catalog-accordion__artist--empty">
+                    <span>Пинтуриккьо</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 1500 по 1599 гг</button>
+            </h3>
+            <div class="catalog-accordion__panel catalog-accordion__empty catalog-accordion-empty">
+              <div class="catalog-accordion-empty__img"></div>
+              <div class="catalog-accordion-empty__descr">
+                <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
+                <p class="catalog-accordion-empty__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
+                <a href="" class="link-reset catalog-accordion-empty__link">В галерею</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 1600 по 1699 гг</button>
+            </h3>
+            <div class="catalog-accordion__panel catalog-accordion__empty catalog-accordion-empty">
+              <div class="catalog-accordion-empty__img"></div>
+              <div class="catalog-accordion-empty__descr">
+                <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
+                <p class="catalog-accordion-empty__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
+                <a href="" class="link-reset catalog-accordion-empty__link">В галерею</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 1700 по 1799 гг</button>
+            </h3>
+            <div class="catalog-accordion__panel catalog-accordion__empty catalog-accordion-empty">
+              <div class="catalog-accordion-empty__img"></div>
+              <div class="catalog-accordion-empty__descr">
+                <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
+                <p class="catalog-accordion-empty__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
+                <a href="" class="link-reset catalog-accordion-empty__link">В галерею</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 1800 по 1899 гг</button>
+            </h3>
+            <div class="catalog-accordion__panel catalog-accordion__empty catalog-accordion-empty">
+              <div class="catalog-accordion-empty__img"></div>
+              <div class="catalog-accordion-empty__descr">
+                <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
+                <p class="catalog-accordion-empty__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
+                <a href="" class="link-reset catalog-accordion-empty__link">В галерею</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 1900 по 1999 гг</button>
+            </h3>
+            <div class="catalog-accordion__panel catalog-accordion__empty catalog-accordion-empty">
+              <div class="catalog-accordion-empty__img"></div>
+              <div class="catalog-accordion-empty__descr">
+                <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
+                <p class="catalog-accordion-empty__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
+                <a href="" class="link-reset catalog-accordion-empty__link">В галерею</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-accordion__item">
+            <h3 class="catalog-accordion__title">
+              <button type="button" class="btn-reset catalog-accordion__btn">C 2000 г</button>
+            </h3>
+            <div class="catalog-accordion__panel catalog-accordion__empty catalog-accordion-empty">
+              <div class="catalog-accordion-empty__img"></div>
+              <div class="catalog-accordion-empty__descr">
+                <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
+                <p class="catalog-accordion-empty__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
+                <a href="" class="link-reset catalog-accordion-empty__link">В галерею</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__artist catalog-artist is-active" id="artist-ghirlandaio">
+          <img class="catalog-artist__img" src="/img/catalog/ghirlandaio@1x.jpg" alt="Автопортрет Доменико Гирландайо" srcset="/img/catalog/ghirlandaio@2x.jpg 2x">
+          <h3 class="catalog-artist__title">Доменико Гирландайо</h3>
+          <span class="catalog-artist__date">2&nbsp;июня 1448&ndash;11 января 1494</span>
+          <p class="catalog-artist__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).</p>
+        </div>
+        <div class="catalog__artist catalog-artist" id="artist-bramantino">
+          <img src="/img/catalog/bramantino@1x.jpg" alt="Поклонение волхвов" class="catalog-artist__img" srcset="/img/catalog/bramantino@2x.jpg 2x">
+          <h3 class="catalog-artist__title">Брамантино</h3>
+          <span class="catalog-artist__date">ок. 1380&ndash;1530</span>
+          <p class="catalog-artist__text">Брамантино сформировался под влиянием Бутиноне и&nbsp;графического стиля Падуи и&nbsp;Феррары. Впоследствии он&nbsp;многому научился у&nbsp;Браманте, у&nbsp;которого долгое время состоял помощником (чем и&nbsp;объясняется его прозвище Брамантино&nbsp;&mdash; букв. &laquo;Маленький Браманте&raquo;) и&nbsp;у&nbsp;которого перенял любовь к&nbsp;монументальным формам и&nbsp;драматизму. Некоторые искусствоведы полагают, что Браманте поручал Брамантино, как живописцу, осуществление своих замыслов.</p>
+        </div>
+        <div class="catalog__artist catalog-artist" id="artist-ambrogio">
+          <img src="/img/catalog/ambrogio@1x.jpg" alt="Принесение во Храм" class="catalog-artist__img" srcset="/img/catalog/ambrogio@2x.jpg 2x">
+          <h3 class="catalog-artist__title">Бергоньоне, Амброджо</h3>
+          <span class="catalog-artist__date">1453&ndash;1523</span>
+          <p class="catalog-artist__text">Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо, незадолго до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.Его завещание датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его учеников считают Бернардино Луини.Работы Бергоньоне представлены в&nbsp;музеях Бергамо, Милана (пинакотека Брера, музей Польди-Пеццоли), Турина, Парижа, Лондона, Нью-Йорка и&nbsp;др., одно из&nbsp;его полотен (Иаков Зеведеев, ок.&nbsp;1500) находится в&nbsp;Эрмитаже.</p>
+        </div>
+        <div class="catalog__artist-empty catalog-artist-empty">
+          <img src="/img/catalog/artist-empty.png" alt="Неизвестный художник" class="catalog-artist-empty__img">
+          <h3 class="catalog-artist-empty__title">Что мы о нём знаем?</h3>
+          <p class="catalog-artist-empty__text">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!</p>
+          <a href="" class="link-reset catalog-artist-empty__link">В галерею</a>
         </div>
       </section>
     </main>

@@ -10,9 +10,16 @@ function openMenu(params) {
 function closeMenu(params) {
   const btn = document.querySelector(`.${params.btnClass}`);
   const menu = document.querySelector(`.${params.menuClass}`);
+  const link = document.querySelectorAll(`.${params.linkClass}`);
 
   btn.addEventListener("click", function () {
     menu.classList.remove(`${params.activeClass}`);
+  });
+
+  link.forEach((el) => {
+    el.addEventListener("click", function () {
+      menu.classList.remove(`${params.activeClass}`);
+    });
   });
 }
 
@@ -94,6 +101,7 @@ openMenu({
 closeMenu({
   btnClass: "header-top-nav__btn-close-menu",
   menuClass: "header-top__nav",
+  linkClass: "header-top-nav__link",
   activeClass: "is-active",
 });
 
