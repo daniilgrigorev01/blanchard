@@ -1,0 +1,393 @@
+.catalog__title {
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #333;
+}
+
+.catalog__text {
+  display: none;
+}
+
+.catalog__accordion {
+  margin-bottom: 47px;
+}
+
+.catalog-accordion__item {
+  overflow: hidden;
+}
+
+.catalog-accordion__title {
+  position: relative;
+  margin: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #cacaca;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  -webkit-transition: border-color 0.2s linear;
+  -o-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.catalog-accordion__title > .catalog-accordion__icon {
+  position: absolute;
+  top: 33%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  background-color: #ececec;
+  -webkit-transition-property: background-color, border-color;
+  -o-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.catalog-accordion__title > .catalog-accordion__icon::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  margin-top: -3px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion__icon::before {
+  margin-top: 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.catalog-accordion__btn {
+  display: block;
+  padding: 27px 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.catalog-accordion__title:hover .catalog-accordion__btn {
+  color: #9d5cd0;
+}
+
+.catalog-accordion__item:first-child .catalog-accordion__title {
+  border-top: 1px solid #cacaca;
+}
+
+.catalog-accordion__item:first-child .catalog-accordion__title:hover {
+  border-color: #9d5cd0;
+}
+
+.catalog-accordion__title:hover {
+  border-color: #9d5cd0;
+}
+
+.catalog-accordion__title:hover .catalog-accordion__icon {
+  background-color: #d1a9f0;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion__icon {
+  border-color: #9d5cd0;
+  background-color: #d1a9f0;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion__btn {
+  color: #7943a4;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion__title {
+  border-color: #7943a4;
+}
+
+.catalog-accordion__item:first-child.is-active .catalog-accordion__title {
+  border-color: #7943a4;
+}
+
+.catalog-accordion__panel {
+  visibility: hidden;
+}
+
+.catalog-accordion__list {
+  padding: 27px 0;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-color 0.2s linear;
+  -o-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.catalog-accordion-list__item {
+  line-height: 1;
+}
+
+.catalog-accordion-list__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion__panel {
+  visibility: visible;
+}
+
+.catalog-accordion__artist {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+}
+
+.catalog-accordion__artist::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+  right: 51%;
+  border-bottom: 1px solid #9d5cd0;
+  opacity: 0;
+  -webkit-transition-property: left, right, opacity;
+  -o-transition-property: left, right, opacity;
+  transition-property: left, right, opacity;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.catalog-accordion__artist:hover::after {
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.catalog-accordion-empty__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-color 0.2s linear;
+  -o-transition: border-color 0.2s linear;
+  transition: border-color 0.2s linear;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion__list {
+  border-color: #cacaca;
+}
+
+.catalog-accordion__item.is-active .catalog-accordion-empty__wrapper {
+  border-color: #cacaca;
+}
+
+.catalog-accordion-empty__img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 90px;
+  height: 118px;
+  background-color: #999;
+}
+
+.catalog-accordion-empty__img::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  display: block;
+  border: 6px solid #fff;
+}
+
+.catalog-accordion-empty__subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.catalog-accordion-empty__text {
+  margin-bottom: 7px;
+  font-size: 16px;
+  color: #333;
+}
+
+.catalog-accordion-empty__link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #9d5cd0;
+}
+
+.catalog-accordion-empty__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+  right: 51%;
+  border-bottom: 1px solid #9d5cd0;
+  opacity: 0;
+  -webkit-transition-property: left, right, opacity;
+  -o-transition-property: left, right, opacity;
+  transition-property: left, right, opacity;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.catalog-accordion-empty__link:hover::after {
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.catalog__artist {
+  display: none;
+  margin-bottom: 50px;
+}
+
+.catalog__artist.is-active {
+  display: block;
+}
+
+.catalog-artist__img {
+  display: block;
+  margin-bottom: 20px;
+  width: 290px;
+  height: 181px;
+  background-color: #cacaca;
+}
+
+.catalog-artist__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.catalog-artist__date {
+  font-size: 12px;
+  color: #999;
+}
+
+.catalog-artist__text {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 2em;
+  color: #333;
+}
+
+.catalog-artist-empty__img {
+  position: relative;
+  margin-bottom: 20px;
+  width: 290px;
+  height: 180px;
+  background-color: #ececec;
+}
+
+.catalog-artist-empty__img::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  width: 107px;
+  height: 107px;
+  background-image: url("/img/catalog/artist-empty.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog-artist-empty__img span {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #666666;
+}
+
+.catalog-artist-empty__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.catalog-artist-empty__text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.catalog-artist-empty__link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  color: #9d5cd0;
+}
+
+.catalog-artist-empty__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+  right: 51%;
+  border-bottom: 1px solid #9d5cd0;
+  opacity: 0;
+  -webkit-transition-property: left, right, opacity;
+  -o-transition-property: left, right, opacity;
+  transition-property: left, right, opacity;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.catalog-artist-empty__link:hover::after {
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1920px) {
+}
