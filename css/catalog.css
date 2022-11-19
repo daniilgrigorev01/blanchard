@@ -81,6 +81,8 @@
 }
 
 .catalog-accordion__btn {
+  position: relative;
+  z-index: 5;
   display: block;
   padding: 27px 0;
   width: 100%;
@@ -89,6 +91,11 @@
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
+}
+
+.catalog-accordion__btn span {
+  position: relative;
+  z-index: 10;
 }
 
 .catalog-accordion__title:hover .catalog-accordion__btn {
@@ -158,6 +165,11 @@
   color: #333;
 }
 
+.catalog-accordion__artist span {
+  position: relative;
+  z-index: 5;
+}
+
 .catalog-accordion__artist::after {
   content: "";
   position: absolute;
@@ -218,10 +230,10 @@
 .catalog-accordion-empty__img::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
   display: block;
   border: 6px solid #fff;
 }
@@ -243,6 +255,14 @@
   font-size: 16px;
   font-weight: 600;
   color: #9d5cd0;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+
+.catalog-accordion-empty__link span {
+  position: relative;
+  z-index: 5;
 }
 
 .catalog-accordion-empty__link::after {
@@ -427,7 +447,13 @@
     -ms-flex-line-pack: justify;
     align-content: space-between;
     padding-top: 32px;
-    min-height: 350px;
+    max-height: 350px;
+  }
+
+  .catalog-accordion-empty__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .catalog-accordion-empty__img {
@@ -437,19 +463,6 @@
 
   .catalog-accordion-empty__img::after {
     border-width: 12px;
-  }
-
-  .catalog-accordion-empty__descr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .catalog-accordion-empty__subtitle {
@@ -486,10 +499,243 @@
 }
 
 @media (min-width: 1024px) {
+  .catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .catalog__title {
+    margin-top: 30px;
+  }
+
+  .catalog__text {
+    margin-bottom: 38px;
+  }
+
+  .catalog__accordion {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 437px;
+  }
+
+  .catalog-accordion__list {
+    padding-top: 36px;
+    padding-bottom: 18px;
+    max-height: 450px;
+  }
+
+  .catalog-accordion-list__item:first-child {
+    margin-right: 60px;
+  }
+
+  .catalog-accordion-list__item:nth-child(12n) {
+    margin-right: 60px;
+  }
+
+  .catalog__artist {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-right: 50px;
+    width: 437px;
+  }
+
+  .catalog-artist__img {
+    margin-bottom: 35px;
+  }
+
+  .catalog-artist__text {
+    margin-top: 18px;
+  }
+
+  .catalog-accordion-empty__img {
+    width: 189px;
+    height: 130px;
+  }
+
+  .catalog-accordion-empty__img::after {
+    border-width: 8px;
+  }
+
+  .catalog-artist-empty__img {
+    height: 274px;
+  }
+
+  .catalog-artist-empty__img::before {
+    left: 145px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .catalog-artist-empty__img span {
+    left: 140px;
+  }
 }
 
 @media (min-width: 1440px) {
+  .catalog__title {
+    width: 100%;
+  }
+
+  .catalog__text {
+    width: 83%;
+  }
+
+  .catalog__accordion {
+    width: 50%;
+  }
+
+  .catalog-accordion__title > .catalog-accordion__icon::before {
+    left: 38%;
+  }
+
+  .catalog-accordion__btn span {
+    background-color: transparent;
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+  }
+
+  .catalog-accordion__btn:focus-visible span {
+    color: #fff;
+    background-color: #9d5cd0;
+  }
+
+  .catalog-accordion__btn:focus-visible::before {
+    opacity: 1;
+  }
+
+  .catalog-accordion__btn:focus-visible + .catalog-accordion__icon {
+    background-color: #d1a9f0;
+  }
+
+  .catalog-accordion__list {
+    max-height: 435px;
+  }
+
+  .catalog-accordion-list__item:first-child {
+    margin-right: 100px;
+  }
+
+  .catalog-accordion__artist:active::after {
+    left: 51%;
+    right: 51%;
+    opacity: 0;
+  }
+
+  .catalog-accordion__artist::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    background-color: #9d5cd0;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+  }
+
+  .catalog-accordion__artist:focus-visible::before {
+    opacity: 1;
+  }
+
+  .catalog__artist {
+    margin-right: auto;
+    width: 45%;
+  }
+
+  .catalog-accordion-empty__descr {
+    width: 47%;
+  }
+
+  .catalog-artist-empty__img {
+    height: 340px;
+  }
+
+  .catalog-artist-empty__img::before {
+    top: 15%;
+    left: 212px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .catalog-artist-empty__img span {
+    left: 220px;
+  }
+
+  .catalog-accordion-empty__link::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    bottom: -5px;
+    left: 0;
+    background-color: #9d5cd0;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+  }
+
+  .catalog-accordion-empty__link:focus-visible span {
+    color: #333;
+  }
+
+  .catalog-accordion-empty__link:focus-visible::before {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1920px) {
+  .catalog__text {
+    width: 70%;
+  }
+
+  .catalog__accordion {
+    width: 800px;
+  }
+
+  .catalog-accordion__list {
+    -ms-flex-line-pack: start;
+    align-content: start;
+    max-height: 360px;
+  }
+
+  .catalog-accordion-empty__img {
+    width: 275px;
+    height: 189px;
+  }
+
+  .catalog-accordion-empty__img::after {
+    border-width: 12px;
+  }
+
+  .catalog-accordion-empty__descr {
+    width: 50%;
+  }
+
+  .catalog__artist {
+    width: 750px;
+  }
+
+  .catalog-artist-empty__img {
+    height: 470px;
+  }
+
+  .catalog-artist-empty__img::before {
+    top: 110px;
+    left: 255px;
+    width: 236px;
+    height: 236px;
+  }
+
+  .catalog-artist-empty__img span {
+    left: 285px;
+  }
 }
