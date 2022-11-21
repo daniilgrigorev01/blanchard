@@ -18,31 +18,13 @@ function aboutArtist(params) {
         let artistTarget = el.dataset.target;
 
         if (linkPath === artistTarget) {
-          el.classList.add(params.activeClass);
+          el.classList.add(params.activeClass, "animate__animated", "animate__fadeIn");
+          el.addEventListener("animationend", () => {
+            el.classList.remove("animate__animated", "animate__fadeIn");
+          });
         } else {
           el.classList.remove(params.activeClass);
         }
-      });
-    });
-  });
-}
-
-function closeAccordion(params) {
-  const link = document.querySelectorAll(`.${params.linkClass}`);
-  const accordionItem = document.querySelectorAll(
-    `.${params.accordionItemClass}`
-  );
-  const accordionPanel = document.querySelectorAll(
-    `.${params.accordionPanelClass}`
-  );
-
-  link.forEach((current) => {
-    current.addEventListener("click", function () {
-      accordionItem.forEach((el) => {
-        el.classList.remove(`${params.activeClass}`);
-      });
-      accordionPanel.forEach((el) => {
-        el.style.height = 0;
       });
     });
   });
@@ -70,13 +52,6 @@ accordionCatalog();
 aboutArtist({
   linkClass: "catalog-accordion__artist",
   artistClass: "catalog__artist",
-  activeClass: "is-active",
-});
-
-closeAccordion({
-  linkClass: "catalog-accordion__artist",
-  accordionItemClass: "catalog-accordion__item",
-  accordionPanelClass: "catalog-accordion__panel",
   activeClass: "is-active",
 });
 

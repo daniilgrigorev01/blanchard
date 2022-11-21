@@ -179,7 +179,7 @@
 }
 
 .gallery__swiper .swiper-button-next,
-.swiper-button-prev {
+.gallery__swiper .swiper-button-prev {
   z-index: 15;
   top: 93%;
   margin: 0 70px;
@@ -201,20 +201,20 @@
 }
 
 .gallery__swiper .swiper-button-next:after,
-.swiper-button-prev::after {
+.gallery__swiper .swiper-button-prev::after {
   position: absolute;
   left: 40%;
   font-size: 14px;
 }
 
 .gallery__swiper .swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
+.gallery__swiper .swiper-button-prev.swiper-button-disabled {
   background-color: #ececec;
   opacity: 1;
 }
 
 .gallery__swiper .swiper-button-next.swiper-button-disabled::after,
-.swiper-button-prev.swiper-button-disabled::after {
+.gallery__swiper .swiper-button-prev.swiper-button-disabled::after {
   color: #cacaca;
 }
 

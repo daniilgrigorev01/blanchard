@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 1440px) {
-  .about {
+  .about__wrapper {
     width: 95%;
   }
 
@@ -50,7 +50,7 @@
 }
 
 @media (min-width: 1920px) {
-  .about {
+  .about__wrapper {
     width: 70%;
   }
 }

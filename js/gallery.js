@@ -1,28 +1,26 @@
-const swiperGallery = () => {
-  const swiperGallery = new Swiper(".gallery__swiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+const swiperGallery = new Swiper(".gallery__swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 38,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
+    1920: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
     },
-    slidesPerView: 1,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 38,
-      },
-      1920: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 50,
-      },
-    },
-  });
-};
+  },
+});
 
 const choicesGallery = () => {
   const element = document.querySelector(".gallery-select__choices");
@@ -32,5 +30,4 @@ const choicesGallery = () => {
   });
 };
 
-swiperGallery();
 choicesGallery();
