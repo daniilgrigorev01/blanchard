@@ -31,16 +31,20 @@
     <link rel="stylesheet" href="/css/gallery.css">
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/projects.css">
 
     <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script defer src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+    <script defer src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer src="https://unpkg.com/tippy.js@6"></script>
     <script defer src="/js/header.js"></script>
     <script defer src="/js/hero.js"></script>
     <script defer src="/js/gallery.js"></script>
     <script defer src="/js/catalog.js"></script>
     <script defer src="/js/events.js"></script>
+    <script defer src="/js/projects.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -637,7 +641,7 @@
                 <span class="events-swiper__date">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</span>
                 <h3 class="events-swiper__title">Книжная гравюра в&nbsp;живом восприятии</h3>
                 <p class="events-swiper__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо</p>
-                <a class="link-reset events-swiper__link">
+                <a class="link-reset events-swiper__link" tabindex="0">
                   <span>Подробнее</span>
                 </a>
               </div>
@@ -649,7 +653,7 @@
                 <span class="events-swiper__date">24&nbsp;марта 19:00</span>
                 <h3 class="events-swiper__title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.</h3>
                 <p class="events-swiper__text">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта</p>
-                <a class="link-reset events-swiper__link">
+                <a class="link-reset events-swiper__link" tabindex="0">
                   <span>Подробнее</span>
                 </a>
               </div>
@@ -661,7 +665,7 @@
                 <span class="events-swiper__date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</span>
                 <h3 class="events-swiper__title">Выставка &laquo;Формация 2020&raquo;</h3>
                 <p class="events-swiper__text">Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений</p>
-                <a class="link-reset events-swiper__link">
+                <a class="link-reset events-swiper__link" tabindex="0">
                   <span>Подробнее</span>
                 </a>
               </div>
@@ -673,7 +677,7 @@
                 <span class="events-swiper__date">с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая</span>
                 <h3 class="events-swiper__title">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
                 <p class="events-swiper__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо</p>
-                <a class="link-reset events-swiper__link">
+                <a class="link-reset events-swiper__link" tabindex="0">
                   <span>Подробнее</span>
                 </a>
               </div>
@@ -685,7 +689,7 @@
                 <span class="events-swiper__date">с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</span>
                 <h3 class="events-swiper__title">XXIV Международная биеннале молодого искусства</h3>
                 <p class="events-swiper__text">Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования</p>
-                <a class="link-reset events-swiper__link">
+                <a class="link-reset events-swiper__link" tabindex="0">
                   <span>Подробнее</span>
                 </a>
               </div>
@@ -695,6 +699,46 @@
         </div>
         <div class="events__swiper-button-prev swiper-button-prev"></div>
         <div class="events__swiper-button-next swiper-button-next"></div>
+      </section>
+      <section class="container projects">
+        <h2 class="projects__title" id="projects">Проекты</h2>
+        <p class="projects__text projects-text">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="Пример современных тенденций&nbsp;&mdash; современная методология разработки" aria-label="Открыть дополнительную информацию"><span class="projects-text-tooltip__icon">i</span></button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции" aria-label="Открыть дополнительную информацию"><span class="projects-text-tooltip__icon">i</span></button> исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="В&nbsp;стремлении повысить качество" aria-label="Открыть дополнительную информацию"><span class="projects-text-tooltip__icon">i</span></button> предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее: <a class="link-reset projects-text__link"><span>blanchard-art.ru/projects</span></a>
+        </p>
+        <h3 class="projects__subtitle">Партнёры проектов:</h3>
+        <div class="projects__swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide slide-1">
+              <img src="/img/projects/frealands-foundation.png" alt="Frealands Foundation" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-2">
+              <img src="/img/projects/ica.png" alt="Institute for Contemporary Art" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-3">
+              <img src="/img/projects/workhouse.png" alt="Workhouse - arts center" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-4">
+              <img src="/img/projects/1849-wine.png" alt="1849 Wine Co." class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-5">
+              <img src="/img/projects/hiscox.png" alt="HISCOX" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-6">
+              <img src="/img/projects/camden.png" alt="Camden - arts centre" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-7">
+              <img src="/img/projects/stassen.png" alt="Stassen - premium belgian cider" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-8">
+              <img src="/img/projects/watts.png" alt="WATSS - gallery artists village" class="projects-swiper__img">
+            </a>
+            <a class="swiper-slide slide-9">
+              <img src="/img/projects/esad.png" alt="École supérieure d'art et de design de Valenciennes" class="projects-swiper__img">
+            </a>
+          </div>
+        </div>
+        <div class="projects__swiper-button-prev swiper-button-prev"></div>
+        <div class="projects__swiper-button-next swiper-button-next"></div>
       </section>
     </main>
   </body>

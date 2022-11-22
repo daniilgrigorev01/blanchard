@@ -16,6 +16,7 @@ const swiperEvents = new Swiper(".events__swiper", {
       spaceBetween: 27,
     },
     1440: {
+      allowTouchMove: false,
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 27,

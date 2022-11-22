@@ -1,4 +1,5 @@
 const swiperGallery = new Swiper(".gallery__swiper", {
+  allowTouchMove: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -27,6 +28,7 @@ const choicesGallery = () => {
   const choices = new Choices(element, {
     searchEnabled: false,
     placeholder: false,
+    allowHTML: false,
   });
 };
 
