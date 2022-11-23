@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/events.css">
     <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/contacts.css">
 
     <script defer src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -39,12 +40,16 @@
     <script defer src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
     <script defer src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer src="https://unpkg.com/tippy.js@6"></script>
+    <script defer src="/libs/inputmask.min.js"></script>
+    <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script defer src="/js/header.js"></script>
     <script defer src="/js/hero.js"></script>
     <script defer src="/js/gallery.js"></script>
     <script defer src="/js/catalog.js"></script>
     <script defer src="/js/events.js"></script>
     <script defer src="/js/projects.js"></script>
+    <script defer src="/js/contacts.js"></script>
   </head>
   <body class="body">
     <header class="header">
@@ -112,7 +117,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"/>
               </svg>
             </button>
-            <input class="header-top-form-search__input-search" type="text" name="search" aria-label="Поиск по сайту">
+            <input class="header-top-form-search__input-search" type="text" name="Поиск" aria-label="Поиск по сайту">
             <button class="btn-reset header-top-form-search__btn-close-search" type="button" aria-label="Закрыть поиск по сайту">
               <span></span>
             </button>
@@ -274,13 +279,13 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"/>
             </svg>
           </button>
-          <input class="header-bottom-form-search__input" type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <input class="header-bottom-form-search__input" type="text" name="Поиск" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
         </form>
       </div>
     </header>
 
     <main class="main">
-      <h1 class="main-title visually-hidden">Картинная галерея - Blanchard</h1>
+      <h1 class="visually-hidden">Картинная галерея - Blanchard</h1>
       <section class="container hero">
         <div class="hero__swiper">
           <div class="swiper-wrapper">
@@ -308,7 +313,7 @@
           <h2 class="gallery__title">Галерея</h2>
           <div class="gallery__select gallery-select">
             <label class="gallery-select__label" for="gallery-filter">Фильтр:</label>
-            <select class="gallery-select__choices" name="gallery-filter" id="gallery-filter">
+            <select class="gallery-select__choices" name="Фильтр галереи" id="gallery-filter">
               <option value="painting">Живопись</option>
               <option value="drawing">Рисунок</option>
               <option value="sculpture">Скульптура</option>
@@ -316,15 +321,15 @@
           </div>
           <ul class="ul-reset gallery__checkbox-list gallery-checkbox-list">
             <li class="gallery-checkbox-list__item">
-              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XIX century" id="XIX">
+              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XIX век" id="XIX">
               <label class="gallery-checkbox-list__label" for="XIX">XIX век</label>
             </li>
             <li class="gallery-checkbox-list__item">
-              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XX century" id="XX" checked>
+              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="XX век" id="XX" checked>
               <label class="gallery-checkbox-list__label" for="XX">XX век</label>
             </li>
             <li class="gallery-checkbox-list__item">
-              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="modernity" id="modernity">
+              <input class="gallery-checkbox-list__input visually-hidden" type="checkbox" name="Современность" id="modernity">
               <label class="gallery-checkbox-list__label" for="modernity">Современность</label>
             </li>
           </ul>
@@ -739,6 +744,60 @@
         </div>
         <div class="projects__swiper-button-prev swiper-button-prev"></div>
         <div class="projects__swiper-button-next swiper-button-next"></div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="container contacts__wrapper">
+          <div class="contacts__addres contacts-addres">
+            <strong class="contacts-addres__name">Шоурум &#8470;&nbsp;4</strong>
+            <span class="contacts-addres__place">Леонтьевский переулок, дом 5/1</span>
+          </div>
+          <form class="contacts__form contacts-form" id="contacts__form" name="Контакты" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+            <div class="contacts-form__inner">
+              <input class="contacts-form__input" id="contacts__name" name="Имя" type="text" placeholder="Имя*" required aria-label="Введите свое имя">
+            </div>
+            <div class="contacts-form__inner">
+              <input class="contacts-form__input" id="contacts__tel" name="Телефон" type="tel" placeholder="Телефон*" required aria-label="Введите свой номер телефона">
+            </div>
+            <button class="btn-reset contacts-form__btn" type="submit">Заказать</button>
+          </form>
+          <div class="contacts__social contacts-social">
+            <b class="contacts-social__title">Связаться в&nbsp;один клик</b>
+            <ul class="ul-reset contacts-social__list contacts-social-list">
+              <li class="contacts-social-list__item">
+                <a class="contacts-social-list__link" href="" target="_blank" aria-label="Ссылка на аккаунт в WhatsApp">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+                    <g clip-path="url(#a)">
+                      <path fill="#30BF39" d="M25 49.219c13.376 0 24.219-10.843 24.219-24.219C49.219 11.624 38.376.781 25 .781 11.624.781.781 11.624.781 25 .781 38.376 11.624 49.219 25 49.219Z"/>
+                      <path fill="#fff" d="M32.344 27.189c-.313-.157-1.953-1.094-2.266-1.172-.312-.157-.547-.157-.781.156a20.716 20.716 0 0 1-1.094 1.25c-.234.234-.39.234-.703.078-.313-.156-1.406-.547-2.656-1.797-.938-.937-1.64-2.031-1.797-2.422-.156-.312 0-.547.156-.703.156-.156.313-.39.547-.547.234-.156.234-.312.39-.547.157-.234.079-.39 0-.625-.078-.234-.703-1.875-.937-2.578-.234-.703-.547-.547-.703-.625-.234 0-.39-.078-.625-.078-.313 0-.703.156-.938.39-.312.313-1.25 1.095-1.25 2.735s1.094 3.36 1.25 3.516c.157.234 2.188 3.828 5.547 5.312 3.36 1.485 3.36 1.016 3.985 1.016s2.031-.781 2.343-1.484c.313-.782.313-1.485.235-1.563-.156 0-.39-.078-.703-.313Zm-6.25 8.046c-2.188 0-4.219-.625-6.016-1.797l-4.219 1.329 1.407-4.063c-1.328-1.875-2.11-4.14-2.11-6.484a11.003 11.003 0 0 1 11.016-11.016c6.094 0 10.937 4.922 10.937 11.016a11.003 11.003 0 0 1-11.015 11.015Zm0-24.218c-7.266 0-13.203 5.937-13.203 13.203 0 2.422.625 4.765 1.875 6.797l-2.422 7.109 7.344-2.344c1.953 1.094 4.14 1.64 6.406 1.64 7.265 0 13.203-5.937 13.203-13.202 0-7.266-5.86-13.203-13.203-13.203Z"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h50v50H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts-social-list__item">
+                <a class="contacts-social-list__link" href="" target="_blank" aria-label="Ссылка на аккаунт в Telegram">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+                    <g clip-path="url(#a)">
+                      <path fill="#26A5E4" d="M25 50c13.807 0 25-11.193 25-25S38.807 0 25 0 0 11.193 0 25s11.193 25 25 25Z"/>
+                      <path fill="#fff" fill-rule="evenodd" d="m11.318 24.736 14.58-6.28c6.942-2.887 8.384-3.389 9.325-3.405.207-.004.67.047.969.29.253.205.322.483.355.677.034.195.075.638.042.984-.376 3.953-2.004 13.547-2.832 17.974-.35 1.873-1.04 2.502-1.709 2.563-1.452.134-2.554-.96-3.96-1.881l-5.58-3.748c-2.468-1.626-.867-2.52.54-3.981.367-.383 6.764-6.2 6.888-6.729.015-.066.03-.312-.117-.442-.146-.13-.362-.085-.517-.05-.22.05-3.736 2.373-10.545 6.97-.998.685-1.902 1.02-2.712 1.002-.892-.02-2.61-.505-3.886-.92-1.565-.509-2.81-.778-2.701-1.642.056-.45.676-.91 1.86-1.381Z" clip-rule="evenodd"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h50v50H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__map" id="map"></div>
       </section>
     </main>
   </body>

@@ -291,6 +291,10 @@
 }
 
 @media (min-width: 768px) {
+  .projects {
+    margin-bottom: 80px;
+  }
+
   .projects__title {
     margin-bottom: 20px;
     font-size: 48px;
