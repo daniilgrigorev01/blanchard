@@ -220,7 +220,7 @@
 .projects__swiper-button-next,
 .projects__swiper-button-prev {
   position: absolute;
-  top: 1245px;
+  top: 96.3%;
   z-index: 15;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,7 +363,7 @@
 
   .projects__swiper-button-next,
   .projects__swiper-button-prev {
-    top: 617px;
+    top: 90.3%;
   }
 }
 
@@ -419,7 +419,7 @@
 
   .projects__swiper-button-next,
   .projects__swiper-button-prev {
-    top: 485px;
+    top: 86.3%;
   }
 }
 
@@ -515,7 +515,7 @@
 
   .projects__swiper-button-next,
   .projects__swiper-button-prev {
-    top: 458px;
+    top: 85.3%;
   }
 
   .projects__swiper-button-next {
@@ -584,7 +584,7 @@
 
   .projects__swiper-button-next,
   .projects__swiper-button-prev {
-    top: 467px;
+    top: 84.3%;
   }
 
   .projects__swiper-button-prev {

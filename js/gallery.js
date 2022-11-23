@@ -1,5 +1,4 @@
 const swiperGallery = new Swiper(".gallery__swiper", {
-  allowTouchMove: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -14,6 +13,9 @@ const swiperGallery = new Swiper(".gallery__swiper", {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 38,
+    },
+    1440: {
+      allowTouchMove: false,
     },
     1920: {
       slidesPerView: 3,

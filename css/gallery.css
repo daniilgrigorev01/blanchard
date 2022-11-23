@@ -181,7 +181,7 @@
 .gallery__swiper .swiper-button-next,
 .gallery__swiper .swiper-button-prev {
   z-index: 15;
-  top: 93%;
+  top: 387px;
   margin: 0 70px;
   width: 30px;
   height: 30px;
