@@ -18,7 +18,11 @@ function aboutArtist(params) {
         let artistTarget = el.dataset.target;
 
         if (linkPath === artistTarget) {
-          el.classList.add(params.activeClass, "animate__animated", "animate__fadeIn");
+          el.classList.add(
+            params.activeClass,
+            "animate__animated",
+            "animate__fadeIn"
+          );
           el.addEventListener("animationend", () => {
             el.classList.remove("animate__animated", "animate__fadeIn");
           });
@@ -32,8 +36,12 @@ function aboutArtist(params) {
 
 function closeAccordionEmpty(params) {
   const link = document.querySelectorAll(`.${params.linkClass}`);
-  const accordionItem = document.querySelectorAll(`.${params.accordionItemClass}`);
-  const accordionPanel = document.querySelectorAll(`.${params.accordionPanelClass}`);
+  const accordionItem = document.querySelectorAll(
+    `.${params.accordionItemClass}`
+  );
+  const accordionPanel = document.querySelectorAll(
+    `.${params.accordionPanelClass}`
+  );
 
   link.forEach((current) => {
     current.addEventListener("click", function () {
@@ -45,6 +53,36 @@ function closeAccordionEmpty(params) {
       });
     });
   });
+}
+
+function scrollCatalog(params) {
+  const clientWidth = Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.body.clientWidth,
+    document.documentElement.clientWidth
+  );
+
+  if (clientWidth < 768) {
+    const links = document.querySelectorAll(`.${params.linkClass}`);
+
+    links.forEach((link) => {
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
+        const href = link.getAttribute('href').substring(1);
+        const scrollTarget = document.getElementById(href);
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+        window.scrollBy({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      });
+    });
+  }
 }
 
 accordionCatalog();
@@ -60,4 +98,8 @@ closeAccordionEmpty({
   accordionItemClass: "catalog-accordion__item",
   accordionPanelClass: "catalog-accordion__panel",
   activeClass: "is-active",
+});
+
+scrollCatalog({
+  linkClass: "catalog-accordion__artist",
 });
