@@ -16,6 +16,9 @@ const swiperGallery = new Swiper(".gallery__swiper", {
     },
     1440: {
       allowTouchMove: false,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50,
     },
     1920: {
       slidesPerView: 3,
@@ -34,4 +37,53 @@ const choicesGallery = () => {
   });
 };
 
+function setModal(params) {
+  if (!document.createElement("dialog").showModal) {
+    import("/libs/dialog-polyfill.min.js").then((dialogPolyfill) =>
+      document.querySelectorAll("dialog").forEach(dialogPolyfill.registerDialog)
+    );
+  }
+
+  const links = document.querySelectorAll(`.${params.linkClass}`);
+  const btnsClose = document.querySelectorAll(`.${params.btnClass}`);
+
+  links.forEach((link) => {
+    link.addEventListener("click", function () {
+      let modal = this.dataset.modal;
+      let targetModal = document.querySelector(`.gallery__modal[data-target="${modal}"]`);
+
+      targetModal.showModal();
+
+      targetModal.classList.add("animate__animated", "animate__zoomIn", "is-open");
+      targetModal.addEventListener("animationend", () => {
+        targetModal.classList.remove("animate__animated", "animate__zoomIn");
+      });
+
+      btnsClose.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          let btn = this.dataset.path;
+          let targetModal = document.querySelector(`.gallery__modal[data-target="${btn}"]`);
+
+          targetModal.classList.add("animate__animated", "animate__zoomOut");
+          targetModal.addEventListener("animationend", () => {
+            targetModal.classList.remove("animate__animated", "animate__zoomOut");
+          });
+
+          function closeModal() {
+            targetModal.classList.remove("is-open");
+            targetModal.close();
+          }
+
+          setTimeout(closeModal, 400);
+        });
+      });
+    });
+  });
+}
+
 choicesGallery();
+
+setModal({
+  linkClass: "gallery-swiper__link",
+  btnClass: "gallery-modal__btn",
+});
