@@ -1,8 +1,8 @@
 .catalog__title {
   margin-bottom: 12px;
-  font-size: 28px;
-  font-weight: 400;
   color: #333;
+  font-weight: 400;
+  font-size: 28px;
 }
 
 .catalog__text {
@@ -22,12 +22,12 @@
   margin: 0;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #cacaca;
-  font-size: 18px;
-  font-weight: 600;
   color: #333;
-  -webkit-transition: border-color 0.2s linear;
-  -o-transition: border-color 0.2s linear;
-  transition: border-color 0.2s linear;
+  font-weight: 600;
+  font-size: 18px;
+  -webkit-transition: border-color .2s linear;
+  -o-transition: border-color .2s linear;
+  transition: border-color .2s linear;
 }
 
 .catalog-accordion__title > .catalog-accordion__icon {
@@ -39,15 +39,15 @@
   border: 1px solid transparent;
   border-radius: 100%;
   background-color: #ececec;
-  -webkit-transition-property: background-color, border-color;
-  -o-transition-property: background-color, border-color;
-  transition-property: background-color, border-color;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
   -webkit-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: background-color, border-color;
+  -o-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
 }
 
 .catalog-accordion__title > .catalog-accordion__icon::before {
@@ -66,11 +66,11 @@
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  -o-transition: transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  -webkit-transition: -webkit-transform .2s linear;
+  -o-transition: transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
 }
 
 .catalog-accordion__item.is-active .catalog-accordion__icon::before {
@@ -85,15 +85,16 @@
   z-index: 5;
   display: block;
   padding: 27px 0;
+  padding-right: 50px;
   width: 100%;
   height: 100%;
   text-align: left;
-  -webkit-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
 }
 
-.catalog-accordion__btn span {
+.catalog-accordion-btn__text {
   position: relative;
   z-index: 10;
 }
@@ -142,9 +143,9 @@
 .catalog-accordion__list {
   padding: 27px 0;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-color 0.2s linear;
-  -o-transition: border-color 0.2s linear;
-  transition: border-color 0.2s linear;
+  -webkit-transition: border-color .2s linear;
+  -o-transition: border-color .2s linear;
+  transition: border-color .2s linear;
 }
 
 .catalog-accordion-list__item {
@@ -165,7 +166,7 @@
   color: #333;
 }
 
-.catalog-accordion__artist span {
+.catalog-accordion-artist__text {
   position: relative;
   z-index: 5;
 }
@@ -181,9 +182,9 @@
   -webkit-transition-property: left, right, opacity;
   -o-transition-property: left, right, opacity;
   transition-property: left, right, opacity;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
   -webkit-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
@@ -201,9 +202,9 @@
   display: flex;
   padding: 20px 0;
   border-bottom: 1px solid transparent;
-  -webkit-transition: border-color 0.2s linear;
-  -o-transition: border-color 0.2s linear;
-  transition: border-color 0.2s linear;
+  -webkit-transition: border-color .2s linear;
+  -o-transition: border-color .2s linear;
+  transition: border-color .2s linear;
 }
 
 .catalog-accordion__item.is-active .catalog-accordion__list {
@@ -255,12 +256,12 @@
   font-size: 16px;
   font-weight: 600;
   color: #9d5cd0;
-  -webkit-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
 }
 
-.catalog-accordion-empty__link span {
+.catalog-accordion-empty-link__text {
   position: relative;
   z-index: 5;
 }
@@ -276,9 +277,9 @@
   -webkit-transition-property: left, right, opacity;
   -o-transition-property: left, right, opacity;
   transition-property: left, right, opacity;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
   -webkit-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
@@ -345,13 +346,13 @@
   background-repeat: no-repeat;
 }
 
-.catalog-artist-empty__img span {
+.catalog-artist-empty-img__text {
   position: absolute;
   top: 75%;
   left: 25%;
   font-size: 18px;
   font-weight: 600;
-  color: #666666;
+  color: #666;
 }
 
 .catalog-artist-empty__title {
@@ -385,9 +386,9 @@
   -webkit-transition-property: left, right, opacity;
   -o-transition-property: left, right, opacity;
   transition-property: left, right, opacity;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
   -webkit-transition-timing-function: linear;
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
@@ -414,9 +415,9 @@
     display: block;
     margin-top: 0;
     margin-bottom: 22px;
+    color: #333;
     font-size: 16px;
     line-height: 2em;
-    color: #333333;
   }
 
   .catalog-accordion__title {
@@ -488,7 +489,7 @@
     height: 236px;
   }
 
-  .catalog-artist-empty__img span {
+  .catalog-artist-empty-img__text {
     left: 250px;
     font-size: 24px;
   }
@@ -576,7 +577,7 @@
     height: 170px;
   }
 
-  .catalog-artist-empty__img span {
+  .catalog-artist-empty-img__text {
     left: 140px;
   }
 }
@@ -598,14 +599,14 @@
     left: 38%;
   }
 
-  .catalog-accordion__btn span {
+  .catalog-accordion-btn__text {
     background-color: transparent;
-    -webkit-transition: background-color 0.2s linear;
-    -o-transition: background-color 0.2s linear;
-    transition: background-color 0.2s linear;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
   }
 
-  .catalog-accordion__btn:focus-visible span {
+  .catalog-accordion__btn:focus-visible .catalog-accordion-btn__text {
     color: #fff;
     background-color: #9d5cd0;
   }
@@ -641,9 +642,9 @@
     left: 0;
     background-color: #9d5cd0;
     opacity: 0;
-    -webkit-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
   }
 
   .catalog-accordion__artist:focus-visible::before {
@@ -670,11 +671,11 @@
     height: 200px;
   }
 
-  .catalog-artist-empty__img span {
+  .catalog-artist-empty-img__text {
     left: 220px;
   }
 
-  .catalog-artist-empty__link span {
+  .catalog-artist-empty-link__text {
     position: relative;
     z-index: 5;
   }
@@ -688,12 +689,12 @@
     left: 0;
     background-color: #9d5cd0;
     opacity: 0;
-    -webkit-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
   }
 
-  .catalog-accordion-empty__link:focus-visible span {
+  .catalog-accordion-empty__link:focus-visible .catalog-accordion-empty-link__text {
     color: #333;
   }
 
@@ -705,7 +706,7 @@
     color: #7943a4;
   }
 
-  .catalog-artist-empty__link:before {
+  .catalog-artist-empty__link::before {
     content: "";
     position: absolute;
     top: -5px;
@@ -714,12 +715,12 @@
     left: 0;
     background-color: #9d5cd0;
     opacity: 0;
-    -webkit-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
   }
 
-  .catalog-artist-empty__link:focus-visible span {
+  .catalog-artist-empty__link:focus-visible .catalog-accordion-empty-link__text {
     color: #333;
   }
 
@@ -775,7 +776,7 @@
     height: 236px;
   }
 
-  .catalog-artist-empty__img span {
+  .catalog-artist-empty-img__text {
     left: 285px;
   }
 }

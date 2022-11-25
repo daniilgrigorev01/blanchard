@@ -28,7 +28,7 @@
 :root {
   --main-color: #fff;
   --secondary-color: #000;
-  --background-color-menu: rgba(0, 0, 0, 0.9);
+  --background-color-menu: rgba(0,0,0,.9);
   --focus-color: #9d5cd0;
   --active-color: #7943a4;
   --hover-color: #c283f3;
@@ -71,11 +71,11 @@
 
 .visually-hidden {
   position: absolute;
+  margin: -1px;
+  padding: 0;
   width: 1px;
   height: 1px;
-  margin: -1px;
   border: 0;
-  padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);

@@ -57,12 +57,12 @@
   <body class="body">
     <header class="header">
       <div class="header__top header-top container">
-        <button class="btn-reset header-top__btn-open-menu" type="button" aria-label="Открыть меню">
-          <span></span>
+        <button class="btn-reset header-top__btn-open-menu header-top-btn-open-menu" type="button" aria-label="Открыть меню">
+          <span class="header-top-btn-open-menu__icon"></span>
         </button>
         <nav class="header-top__nav header-top-nav" data-simplebar>
-          <button class="btn-reset header-top-nav__btn-close-menu" type="button" aria-label="Закрыть меню">
-            <span></span>
+          <button class="btn-reset header-top-nav__btn-close-menu header-top-nav-btn-close-menu" type="button" aria-label="Закрыть меню">
+            <span class="header-top-nav-btn-close-menu__icon"></span>
           </button>
           <ul class="ul-reset header-top-nav__menu">
             <li class="header-top-nav__item">
@@ -97,32 +97,32 @@
             </li>
           </ul>
           <a class="link-reset header-top__login header-top-login" href="#">
-            <span class="header-top-login__arrow-wrapper">
-              <svg width="14" height="9" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="white"></path>
+            <span class="header-top-login__arrow-wrapper header-top-login-arrow-wrapper">
+              <svg class="header-top-login-arrow-wrapper__svg" width="14" height="9" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-top-login-arrow-wrapper__path" d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="white"></path>
               </svg>
             </span>
-            <span>Войти</span>
+            <span class="header-top-login__text">Войти</span>
           </a>
         </nav>
-        <a class="link-reset header__logo">
-          <img src="/img/logo.png" alt="Blanchard - картинная галерея">
+        <a class="link-reset header__logo header-logo">
+          <img class="header-logo__img" src="/img/logo.png" alt="Blanchard - картинная галерея">
         </a>
-        <button class="btn-reset header-top__btn-open-search" type="button" aria-label="Открыть поиск по сайту">
-          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"></path>
+        <button class="btn-reset header-top__btn-open-search header-top-btn-open-search" type="button" aria-label="Открыть поиск по сайту">
+          <svg class="header-top-btn-open-search__svg" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header-top-btn-open-search__path" fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"></path>
           </svg>
         </button>
         <div class="header-top__form-wrapper">
           <form class="header-top__form-search header-top-form-search" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <button class="btn-reset header-top-form-search__btn-search" type="submit" aria-label="Начать поиск по сайту">
-              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"></path>
+            <button class="btn-reset header-top-form-search__btn-search header-top-form-search-btn-search" type="submit" aria-label="Начать поиск по сайту">
+              <svg class="header-top-form-search-btn-search__svg" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-top-form-search-btn-search__path" fill-rule="evenodd" clip-rule="evenodd" d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z" fill="white"></path>
               </svg>
             </button>
             <input class="header-top-form-search__input-search" name="Поиск" type="text" aria-label="Поиск по сайту">
-            <button class="btn-reset header-top-form-search__btn-close-search" type="button" aria-label="Закрыть поиск по сайту">
-              <span></span>
+            <button class="btn-reset header-top-form-search__btn-close-search header-top-form-search-btn-close-search" type="button" aria-label="Закрыть поиск по сайту">
+              <span class="header-top-form-search-btn-close-search__icon"></span>
             </button>
           </form>
         </div>
@@ -136,23 +136,23 @@
             <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="one">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Тинторетто</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Тинторетто</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Фридрих</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Фридрих</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Леонардо</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Леонардо</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Верроккьо</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Верроккьо</span>
                   </a>
                 </li>
               </ul>
@@ -165,23 +165,23 @@
             <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="two">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Моне</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Моне</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Сислей</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Сислей</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Мане</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Мане</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Ренуар</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Ренуар</span>
                   </a>
                 </li>
               </ul>
@@ -194,23 +194,23 @@
             <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="three">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Ван Гог</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Ван Гог</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Сезанн</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Сезанн</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Гоген</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Гоген</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Сёра</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Сёра</span>
                   </a>
                 </li>
               </ul>
@@ -223,23 +223,23 @@
             <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="four">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Кандинский</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Кандинский</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Маринетти</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Маринетти</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Малевич</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Малевич</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Пикассо</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Пикассо</span>
                   </a>
                 </li>
               </ul>
@@ -252,23 +252,23 @@
             <div class="header-bottom-list__dropdown-menu header-bottom-list-dropdown-menu" data-simplebar data-target="five">
               <ul class="ul-reset header-bottom-list-dropdown-menu__list">
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Карра</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Карра</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Прателла</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Прателла</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Северини</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Северини</span>
                   </a>
                 </li>
                 <li class="header-bottom-list-dropdown-menu__item">
-                  <a class="link-reset header-bottom-list-dropdown-menu__link">
-                    <span>Балла</span>
+                  <a class="link-reset header-bottom-list-dropdown-menu__link header-bottom-list-dropdown-menu-link">
+                    <span class="header-bottom-list-dropdown-menu-link__text">Балла</span>
                   </a>
                 </li>
               </ul>
@@ -276,10 +276,10 @@
           </li>
         </ul>
         <form class="header-bottom__form-search header-bottom-form-search" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <button class="btn-reset header-bottom-form-search__btn-search" type="submit" aria-label="Начать поиск по сайту">
-            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"></rect>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"></path>
+          <button class="btn-reset header-bottom-form-search__btn-search header-bottom-form-search-btn-search" type="submit" aria-label="Начать поиск по сайту">
+            <svg class="header-bottom-form-search-btn-search__svg" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="header-bottom-form-search-btn-search__rect" width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"></rect>
+              <path class="header-bottom-form-search-btn-search__path" fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"></path>
             </svg>
           </button>
           <input class="header-bottom-form-search__input" name="Поиск" type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
@@ -300,9 +300,8 @@
         <div class="hero__content">
           <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
           <p class="hero__text">
-            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация
-            намеченных плановых заданий создаёт предпосылки для новых
-            предложений
+            Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки
+            для новых предложений
           </p>
           <a class="link-reset hero__link">Подписаться на&nbsp;рассылку</a>
         </div>
@@ -312,19 +311,14 @@
         <div class="about__wrapper">
           <h2 class="about__title">О&nbsp;нас</h2>
           <p class="about__text">
-            Ясность нашей позиции очевидна: семантический разбор внешних
-            противодействий однозначно определяет каждого участника как
-            способного принимать собственные решения касаемо распределения
-            внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако,
-            забывать, что высококачественный прототип будущего проекта влечёт
-            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития.
-            Повседневная практика показывает, что высокое качество позиционных
-            исследований создаёт необходимость включения в&nbsp;производственный
-            план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса
-            распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках
-            спецификации современных стандартов, действия представителей
-            оппозиции набирают популярность среди определённых слоёв населения,
-            а&nbsp;значит, должны быть разоблачены.
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+            участника как способного принимать собственные решения касаемо распределения внутренних резервов
+            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечёт
+            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+            высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
+            целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
+            и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции
+            набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
           </p>
         </div>
       </section>
@@ -369,25 +363,37 @@
           <div class="swiper-pagination"></div>
         </div>
 
-        <dialog class="gallery__modal gallery-modal" data-target="malevich" aria-labelledby="gallery-modal__title--woman-with-a-rake" aria-describedby="gallery-modal__descr--woman-with-a-rake">
+        <dialog class="gallery__modal gallery-modal" data-target="malevich" aria-describedby="gallery-modal__descr--woman-with-a-rake" aria-labelledby="gallery-modal__title--woman-with-a-rake">
           <div class="gallery-modal__wrapper">
-            <button class="btn-reset gallery-modal__btn" data-path="malevich" aria-label="Закрыть окно"><span></span></button>
+            <button class="btn-reset gallery-modal__btn gallery-modal-btn" data-path="malevich" aria-label="Закрыть окно">
+              <span class="gallery-modal-btn__icon"></span>
+            </button>
             <img class="gallery-modal__img" src="/img/gallery/modal/malevich.jpg" alt="Женщина с граблями">
             <div class="gallery-modal__inner">
-              <h3 class="gallery-modal__title" id="gallery-modal__title--woman-with-a-rake">&laquo;Женщина с&nbsp;граблями&raquo;</h3>
+              <h3 class="gallery-modal__title" id="gallery-modal__title--woman-with-a-rake">
+                &laquo;Женщина с&nbsp;граблями&raquo;
+              </h3>
               <b class="gallery-modal__subtitle">Казимир Малевич</b>
               <span class="gallery-modal__years">1931&nbsp;&mdash; 1932</span>
-              <p class="gallery-modal__text" id="gallery-modal__descr--woman-with-a-rake">Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.</p>
+              <p class="gallery-modal__text" id="gallery-modal__descr--woman-with-a-rake">
+                Картина из&nbsp;второй серии крестьянского цикла работ Казимира Малевича. Художник принялся
+                за&nbsp;её&nbsp;создание в&nbsp;1930&ndash;1931&nbsp;годах, после того, как первый цикл был утерян после
+                Берлинской и&nbsp;Варшавской выставок в&nbsp;1927&nbsp;году.
+              </p>
             </div>
           </div>
         </dialog>
-        <dialog class="gallery__modal gallery-modal gallery__modal--empty" data-target="none" aria-labelledby="gallery-modal__title--empty" aria-describedby="gallery-modal__descr--empty">
+        <dialog class="gallery__modal gallery-modal gallery__modal--empty" data-target="none" aria-describedby="gallery-modal__descr--empty" aria-labelledby="gallery-modal__title--empty">
           <div class="gallery-modal__wrapper">
-            <button class="btn-reset gallery-modal__btn" data-path="none" aria-label="Закрыть окно"><span></span></button>
+            <button class="btn-reset gallery-modal__btn gallery-modal-btn" data-path="none" aria-label="Закрыть окно">
+              <span class="gallery-modal-btn__icon"></span>
+            </button>
             <div class="gallery-modal__empty-img"></div>
             <div class="gallery-modal__inner">
               <h3 class="gallery-modal__title" id="gallery-modal__title--empty">Что мы знаем о картине??</h3>
-              <p class="gallery-modal__text" id="gallery-modal__descr--empty">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!</p>
+              <p class="gallery-modal__text" id="gallery-modal__descr--empty">
+                Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
+              </p>
             </div>
           </div>
         </dialog>
@@ -396,142 +402,139 @@
       <section class="container catalog" id="catalog">
         <h2 class="catalog__title">Каталог</h2>
         <p class="catalog__text">
-          Акционеры крупнейших компаний, которые представляют собой яркий пример
-          континентально-европейского типа политической культуры, будут
-          объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали.
-          Являясь всего лишь частью общей картины, стремящиеся вытеснить
-          традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день
-          остаются уделом либералов, которые жаждут быть функционально разнесены
-          на&nbsp;независимые элементы.
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+          политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
+          лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей
+          день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
         </p>
         <div class="catalog__accordion catalog-accordion">
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 1400 по 1499 гг</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 1400 по 1499 гг</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
             <div class="catalog-accordion__panel">
               <ul class="ul-reset catalog-accordion__list catalog-accordion-list">
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Бенедетто ди Биндо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Бенедетто ди Биндо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="ambrogio" href="#ambrogio">
-                    <span>Бергоньоне, Амброджо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="ambrogio" href="#ambrogio">
+                    <span class="catalog-accordion-artist__text">Бергоньоне, Амброджо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Биссоло, Франческо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Биссоло, Франческо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Больтраффио, Джованни</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Больтраффио, Джованни</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Бонсиньори, Франческо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Бонсиньори, Франческо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Боттичини, Рафаэлло</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Боттичини, Рафаэлло</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="bramantino" href="#bramantino">
-                    <span>Брамантино</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="bramantino" href="#bramantino">
+                    <span class="catalog-accordion-artist__text">Брамантино</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Бреа, Людовико</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Бреа, Людовико</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Бьяджо д’Антонио Туччи</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Бьяджо д’Антонио Туччи</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Веккьетта</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Веккьетта</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Андреа Верроккьо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Андреа Верроккьо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="ghirlandaio" href="#ghirlandaio">
-                    <span>Доменико Гирландайо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="ghirlandaio" href="#ghirlandaio">
+                    <span class="catalog-accordion-artist__text">Доменико Гирландайо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Беноццо Гоццоли</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Беноццо Гоццоли</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Граначчи, Франческо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Граначчи, Франческо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Грегорио ди Чекко</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Грегорио ди Чекко</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Джованни да Удине</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Джованни да Удине</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Джованни ди Паоло</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Джованни ди Паоло</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Джорджоне</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Джорджоне</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Парентино, Бернардо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Парентино, Бернардо</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Пезеллино</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Пезеллино</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Пьетро Перуджино</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Пьетро Перуджино</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Перуцци, Бальдассаре</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Перуцци, Бальдассаре</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Пизанелло</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Пизанелло</span>
                   </a>
                 </li>
                 <li class="catalog-accordion-list__item">
-                  <a class="link-reset catalog-accordion__artist" data-path="none" href="#none">
-                    <span>Пинтуриккьо</span>
+                  <a class="link-reset catalog-accordion__artist catalog-accordion-artist" data-path="none" href="#none">
+                    <span class="catalog-accordion-artist__text">Пинтуриккьо</span>
                   </a>
                 </li>
               </ul>
@@ -539,8 +542,8 @@
           </div>
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 1500 по 1599 гг</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 1500 по 1599 гг</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
@@ -550,11 +553,10 @@
                 <div class="catalog-accordion-empty__descr">
                   <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
                   <p class="catalog-accordion-empty__text">
-                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
-                    интересное для себя
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a class="link-reset catalog-accordion-empty__link" href="#gallery">
-                    <span>В галерею</span>
+                  <a class="link-reset catalog-accordion-empty__link catalog-accordion-empty-link" href="#gallery">
+                    <span class="catalog-accordion-empty-link__text">В галерею</span>
                   </a>
                 </div>
               </div>
@@ -562,8 +564,8 @@
           </div>
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 1600 по 1699 гг</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 1600 по 1699 гг</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
@@ -573,11 +575,10 @@
                 <div class="catalog-accordion-empty__descr">
                   <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
                   <p class="catalog-accordion-empty__text">
-                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
-                    интересное для себя
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a class="link-reset catalog-accordion-empty__link" href="#gallery">
-                    <span>В галерею</span>
+                  <a class="link-reset catalog-accordion-empty__link catalog-accordion-empty-link" href="#gallery">
+                    <span class="catalog-accordion-empty-link__text">В галерею</span>
                   </a>
                 </div>
               </div>
@@ -585,8 +586,8 @@
           </div>
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 1700 по 1799 гг</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 1700 по 1799 гг</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
@@ -596,11 +597,10 @@
                 <div class="catalog-accordion-empty__descr">
                   <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
                   <p class="catalog-accordion-empty__text">
-                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
-                    интересное для себя
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a class="link-reset catalog-accordion-empty__link" href="#gallery">
-                    <span>В галерею</span>
+                  <a class="link-reset catalog-accordion-empty__link catalog-accordion-empty-link" href="#gallery">
+                    <span class="catalog-accordion-empty-link__text">В галерею</span>
                   </a>
                 </div>
               </div>
@@ -608,8 +608,8 @@
           </div>
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 1800 по 1899 гг</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 1800 по 1899 гг</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
@@ -619,11 +619,10 @@
                 <div class="catalog-accordion-empty__descr">
                   <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
                   <p class="catalog-accordion-empty__text">
-                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
-                    интересное для себя
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a class="link-reset catalog-accordion-empty__link" href="#gallery">
-                    <span>В галерею</span>
+                  <a class="link-reset catalog-accordion-empty__link catalog-accordion-empty-link" href="#gallery">
+                    <span class="catalog-accordion-empty-link__text">В галерею</span>
                   </a>
                 </div>
               </div>
@@ -631,8 +630,8 @@
           </div>
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 1900 по 1999 гг</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 1900 по 1999 гг</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
@@ -642,11 +641,10 @@
                 <div class="catalog-accordion-empty__descr">
                   <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
                   <p class="catalog-accordion-empty__text">
-                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
-                    интересное для себя
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a class="link-reset catalog-accordion-empty__link" href="#gallery">
-                    <span>В галерею</span>
+                  <a class="link-reset catalog-accordion-empty__link catalog-accordion-empty-link" href="#gallery">
+                    <span class="catalog-accordion-empty-link__text">В галерею</span>
                   </a>
                 </div>
               </div>
@@ -654,8 +652,8 @@
           </div>
           <div class="catalog-accordion__item">
             <h3 class="catalog-accordion__title">
-              <button class="btn-reset catalog-accordion__btn" type="button">
-                <span>C 2000 г</span>
+              <button class="btn-reset catalog-accordion__btn catalog-accordion-btn" type="button">
+                <span class="catalog-accordion-btn__text">C 2000 г</span>
               </button>
               <span class="catalog-accordion__icon"></span>
             </h3>
@@ -665,11 +663,10 @@
                 <div class="catalog-accordion-empty__descr">
                   <b class="catalog-accordion-empty__subtitle">Здесь пока пусто</b>
                   <p class="catalog-accordion-empty__text">
-                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то
-                    интересное для себя
+                    А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя
                   </p>
-                  <a class="link-reset catalog-accordion-empty__link" href="#gallery">
-                    <span>В галерею</span>
+                  <a class="link-reset catalog-accordion-empty__link catalog-accordion-empty-link" href="#gallery">
+                    <span class="catalog-accordion-empty-link__text">В галерею</span>
                   </a>
                 </div>
               </div>
@@ -681,14 +678,11 @@
           <h3 class="catalog-artist__title">Доменико Гирландайо</h3>
           <span class="catalog-artist__date">2&nbsp;июня 1448 &ndash; 11 января 1494</span>
           <p class="catalog-artist__text">
-            Один из&nbsp;ведущих флорентийских художников Кватроченто,
-            основатель художественной династии, которую продолжили его брат
-            Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный
-            Микеланджело в&nbsp;течение года овладевал профессиональными
-            навыками. Автор фресковых циклов, в&nbsp;которых выпукло,
-            со&nbsp;всевозможными подробностями показана домашняя жизнь
-            библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные
-            граждане Флоренции в&nbsp;костюмах того времени).
+            Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+            продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело
+            в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло,
+            со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли
+            выступают знатные граждане Флоренции в&nbsp;костюмах того времени).
           </p>
         </div>
         <div class="catalog__artist catalog-artist" id="bramantino" data-target="bramantino">
@@ -696,14 +690,11 @@
           <h3 class="catalog-artist__title">Брамантино</h3>
           <span class="catalog-artist__date">ок. 1380 &ndash; 1530</span>
           <p class="catalog-artist__text">
-            Брамантино сформировался под влиянием Бутиноне и&nbsp;графического
-            стиля Падуи и&nbsp;Феррары. Впоследствии он&nbsp;многому научился
-            у&nbsp;Браманте, у&nbsp;которого долгое время состоял помощником
-            (чем и&nbsp;объясняется его прозвище Брамантино&nbsp;&mdash; букв.
-            &laquo;Маленький Браманте&raquo;) и&nbsp;у&nbsp;которого перенял
-            любовь к&nbsp;монументальным формам и&nbsp;драматизму. Некоторые
-            искусствоведы полагают, что Браманте поручал Брамантино, как
-            живописцу, осуществление своих замыслов.
+            Брамантино сформировался под влиянием Бутиноне и&nbsp;графического стиля Падуи и&nbsp;Феррары. Впоследствии
+            он&nbsp;многому научился у&nbsp;Браманте, у&nbsp;которого долгое время состоял помощником (чем
+            и&nbsp;объясняется его прозвище Брамантино&nbsp;&mdash; букв. &laquo;Маленький Браманте&raquo;)
+            и&nbsp;у&nbsp;которого перенял любовь к&nbsp;монументальным формам и&nbsp;драматизму. Некоторые
+            искусствоведы полагают, что Браманте поручал Брамантино, как живописцу, осуществление своих замыслов.
           </p>
         </div>
         <div class="catalog__artist catalog-artist" id="ambrogio" data-target="ambrogio">
@@ -711,34 +702,27 @@
           <h3 class="catalog-artist__title">Бергоньоне, Амброджо</h3>
           <span class="catalog-artist__date">1453 &ndash; 1523</span>
           <p class="catalog-artist__text">
-            Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе,
-            по&nbsp;манере ему близок Винченцо Фоппа. Испытал влияние Леонардо
-            да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в
-            монастырской обители картезианцев Чертоза ди&nbsp;Павия. Позднее
-            работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо и&nbsp;церкви
-            Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди,
-            в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо, незадолго
-            до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике
-            Сан-Симпличано.Его завещание датировано 4&nbsp;апреля 1523,
-            в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его учеников
-            считают Бернардино Луини.Работы Бергоньоне представлены
-            в&nbsp;музеях Бергамо, Милана (пинакотека Брера, музей
-            Польди-Пеццоли), Турина, Парижа, Лондона, Нью-Йорка и&nbsp;др., одно
-            из&nbsp;его полотен (Иаков Зеведеев, ок.&nbsp;1500) находится
-            в&nbsp;Эрмитаже.
+            Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо Фоппа.
+            Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской
+            обители картезианцев Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо
+            и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо,
+            незадолго до&nbsp;смерти&nbsp;&mdash; снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано.Его завещание
+            датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его учеников считают
+            Бернардино Луини.Работы Бергоньоне представлены в&nbsp;музеях Бергамо, Милана (пинакотека Брера, музей
+            Польди-Пеццоли), Турина, Парижа, Лондона, Нью-Йорка и&nbsp;др., одно из&nbsp;его полотен (Иаков Зеведеев,
+            ок.&nbsp;1500) находится в&nbsp;Эрмитаже.
           </p>
         </div>
         <div class="catalog__artist catalog__artist-empty catalog-artist-empty" id="none" data-target="none">
-          <div class="catalog-artist-empty__img">
-            <span>Х — Художник</span>
+          <div class="catalog-artist-empty__img catalog-artist-empty-img">
+            <span class="catalog-artist-empty-img__text">Х — Художник</span>
           </div>
           <h3 class="catalog-artist-empty__title">Что мы о нём знаем?</h3>
           <p class="catalog-artist-empty__text">
-            Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть
-            на&nbsp;что посмотреть!
+            Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
           </p>
-          <a class="link-reset catalog-artist-empty__link">
-            <span>В галерею</span>
+          <a class="link-reset catalog-artist-empty__link catalog-artist-empty-link">
+            <span class="catalog-artist-empty-link__text">В галерею</span>
           </a>
         </div>
       </section>
@@ -751,16 +735,13 @@
               <div class="events-swiper__inner">
                 <span class="events-swiper__img-descr">Музей им. Щусева</span>
                 <span class="events-swiper__date">с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</span>
-                <h3 class="events-swiper__title">
-                  Книжная гравюра в&nbsp;живом восприятии
-                </h3>
+                <h3 class="events-swiper__title">Книжная гравюра в&nbsp;живом восприятии</h3>
                 <p class="events-swiper__text">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто,
-                  основатель художественной династии, которую продолжили его
-                  брат Давид и&nbsp;сын Ридольфо
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо
                 </p>
-                <a class="link-reset events-swiper__link" tabindex="0">
-                  <span>Подробнее</span>
+                <a class="link-reset events-swiper__link events-swiper-link" tabindex="0">
+                  <span class="events-swiper-link__text">Подробнее</span>
                 </a>
               </div>
             </div>
@@ -770,15 +751,14 @@
                 <span class="events-swiper__img-descr">ММОМА</span>
                 <span class="events-swiper__date">24&nbsp;марта 19:00</span>
                 <h3 class="events-swiper__title">
-                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей
-                  Ильин.
+                  &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
                 </h3>
                 <p class="events-swiper__text">
-                  Высокий уровень вовлечения представителей целевой аудитории
-                  является чётким доказательством простого факта
+                  Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                  факта
                 </p>
-                <a class="link-reset events-swiper__link" tabindex="0">
-                  <span>Подробнее</span>
+                <a class="link-reset events-swiper__link events-swiper-link" tabindex="0">
+                  <span class="events-swiper-link__text">Подробнее</span>
                 </a>
               </div>
             </div>
@@ -787,16 +767,13 @@
               <div class="events-swiper__inner">
                 <span class="events-swiper__img-descr">Еврейский музей</span>
                 <span class="events-swiper__date">с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</span>
-                <h3 class="events-swiper__title">
-                  Выставка &laquo;Формация 2020&raquo;
-                </h3>
+                <h3 class="events-swiper__title">Выставка &laquo;Формация 2020&raquo;</h3>
                 <p class="events-swiper__text">
-                  Идейные соображения высшего порядка, а&nbsp;также современная
-                  методология разработки играет важную роль в&nbsp;формировании
-                  глубокомысленных рассуждений
+                  Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную
+                  роль в&nbsp;формировании глубокомысленных рассуждений
                 </p>
-                <a class="link-reset events-swiper__link" tabindex="0">
-                  <span>Подробнее</span>
+                <a class="link-reset events-swiper__link events-swiper-link" tabindex="0">
+                  <span class="events-swiper-link__text">Подробнее</span>
                 </a>
               </div>
             </div>
@@ -805,16 +782,13 @@
               <div class="events-swiper__inner">
                 <span class="events-swiper__img-descr">ММАМ</span>
                 <span class="events-swiper__date">с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая</span>
-                <h3 class="events-swiper__title">
-                  Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
-                </h3>
+                <h3 class="events-swiper__title">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;</h3>
                 <p class="events-swiper__text">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто,
-                  основатель художественной династии, которую продолжили его
-                  брат Давид и&nbsp;сын Ридольфо
+                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                  продолжили его брат Давид и&nbsp;сын Ридольфо
                 </p>
-                <a class="link-reset events-swiper__link" tabindex="0">
-                  <span>Подробнее</span>
+                <a class="link-reset events-swiper__link events-swiper-link" tabindex="0">
+                  <span class="events-swiper-link__text">Подробнее</span>
                 </a>
               </div>
             </div>
@@ -823,15 +797,12 @@
               <div class="events-swiper__inner">
                 <span class="events-swiper__img-descr">Третьяковка на&nbsp;Крымском валу</span>
                 <span class="events-swiper__date">с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</span>
-                <h3 class="events-swiper__title">
-                  XXIV Международная биеннале молодого искусства
-                </h3>
+                <h3 class="events-swiper__title">XXIV Международная биеннале молодого искусства</h3>
                 <p class="events-swiper__text">
-                  Внезапно, реплицированные с&nbsp;зарубежных источников,
-                  современные исследования
+                  Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования
                 </p>
-                <a class="link-reset events-swiper__link" tabindex="0">
-                  <span>Подробнее</span>
+                <a class="link-reset events-swiper__link events-swiper-link" tabindex="0">
+                  <span class="events-swiper-link__text">Подробнее</span>
                 </a>
               </div>
             </div>
@@ -844,31 +815,23 @@
       <section class="container projects">
         <h2 class="projects__title" id="projects">Проекты</h2>
         <p class="projects__text projects-text">
-          Предварительные выводы: постоянное информационно-пропагандистское
-          обеспечение нашей деятельности однозначно фиксирует необходимость
-          своевременного выполнения сверхзадачи. А&nbsp;ещё независимые
-          государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени
-          совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус
-          бесполезности. Прежде всего, постоянное
-          информационно-пропагандистское&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="Пример современных тенденций&nbsp;&mdash; современная методология разработки" aria-label="Открыть дополнительную информацию">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+          фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
+          с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает
+          их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="Пример современных тенденций&nbsp;&mdash; современная методология разработки" aria-label="Открыть дополнительную информацию">
             <span class="projects-text-tooltip__icon">i</span>
           </button>
-          обеспечение нашей деятельности однозначно фиксирует необходимость
-          экономической целесообразности принимаемых решений. И&nbsp;нет
-          сомнений, что действия представителей оппозиции могут быть
-          рассмотрены&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции" aria-label="Открыть дополнительную информацию">
+          обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых
+          решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="Приятно, граждане, наблюдать, как сделанные на&nbsp;базе аналитики выводы вызывают у&nbsp;вас эмоции" aria-label="Открыть дополнительную информацию">
             <span class="projects-text-tooltip__icon">i</span>
           </button>
-          исключительно в&nbsp;разрезе маркетинговых
-          и&nbsp;финансовых&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="В&nbsp;стремлении повысить качество" aria-label="Открыть дополнительную информацию">
+          исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых&nbsp;<button class="btn-reset projects-text__tooltip projects-text-tooltip" data-tippy-content="В&nbsp;стремлении повысить качество" aria-label="Открыть дополнительную информацию">
             <span class="projects-text-tooltip__icon">i</span>
           </button>
-          предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также
-          представители современных социальных резервов призывают нас
-          к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть
-          смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой
-          неузнаваемости. Подробнее:
-          <a class="link-reset projects-text__link"><span>blanchard-art.ru/projects</span></a>
+          предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных
+          резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны
+          с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости. Подробнее:
+          <a class="link-reset projects-text__link projects-text-link"><span class="projects-text-link__text">blanchard-art.ru/projects</span></a>
         </p>
         <h3 class="projects__subtitle">Партнёры проектов:</h3>
         <div class="projects__swiper projects-swiper">
@@ -912,16 +875,14 @@
             <strong class="contacts-addres__name">Шоурум &#8470;&nbsp;4</strong>
             <span class="contacts-addres__place">Леонтьевский переулок, дом 5/1</span>
           </div>
-          <form class="contacts__form contacts-form" id="contacts__form" name="Контакты" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+          <form class="contacts__form contacts-form" id="contacts__form" name="Contacts" method="POST" autocomplete="on">
             <div class="contacts-form__inner">
-              <input class="contacts-form__input" id="contacts__name" name="Имя" type="text" aria-label="Введите свое имя" placeholder="Имя*" required>
+              <input class="contacts-form__input" id="contacts__name" name="name" type="text" aria-label="Введите свое имя" placeholder="Имя*" required>
             </div>
             <div class="contacts-form__inner">
-              <input class="contacts-form__input" id="contacts__tel" name="Телефон" type="tel" aria-label="Введите свой номер телефона" placeholder="Телефон*" required>
+              <input class="contacts-form__input" id="contacts__tel" name="tel" type="tel" aria-label="Введите свой номер телефона" placeholder="Телефон*" required>
             </div>
-            <button class="btn-reset contacts-form__btn" type="submit">
-              Заказать
-            </button>
+            <button class="btn-reset contacts-form__btn" type="submit">Заказать</button>
           </form>
           <div class="contacts__social contacts-social">
             <b class="contacts-social__title">Связаться в&nbsp;один клик</b>
@@ -965,22 +926,22 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="footer__logo">
-          <img src="/img/logo.png" alt="Blanchard - картинная галерея">
+        <a class="footer__logo footer-logo">
+          <img class="footer-logo__img" src="/img/logo.png" alt="Blanchard - картинная галерея">
         </a>
         <ul class="ul-reset footer__list footer-list">
           <li class="footer-list__item">
-            <a class="link-reset footer-list__link" aria-label="Аккаунт Вконтакте">
+            <a class="link-reset footer-list__link footer-list-link" aria-label="Аккаунт Вконтакте">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 45 45">
-                <path fill="#CACACA" d="M22.5 0C10.074 0 0 10.074 0 22.5S10.074 45 22.5 45 45 34.926 45 22.5 34.926 0 22.5 0Zm11.413 24.933c1.049 1.025 2.158 1.989 3.1 3.119.417.5.81 1.017 1.11 1.598.427.83.04 1.739-.701 1.788l-4.61-.001c-1.19.098-2.138-.382-2.937-1.196-.637-.648-1.229-1.341-1.843-2.012a4.29 4.29 0 0 0-.83-.738c-.628-.41-1.174-.284-1.534.373-.367.668-.451 1.408-.486 2.151-.05 1.087-.378 1.371-1.468 1.422-2.33.11-4.542-.244-6.597-1.419-1.813-1.036-3.216-2.499-4.439-4.155-2.38-3.228-4.204-6.77-5.843-10.415-.368-.821-.099-1.26.807-1.277 1.504-.03 3.009-.026 4.513-.002.613.01 1.018.36 1.253.938.813 2 1.81 3.904 3.059 5.669.332.47.672.938 1.156 1.27.534.367.94.245 1.193-.35.16-.38.23-.785.265-1.19.12-1.392.134-2.782-.073-4.167-.129-.867-.616-1.427-1.48-1.59-.44-.084-.376-.247-.162-.498.372-.435.72-.704 1.415-.704h5.208c.821.16 1.005.529 1.117 1.356l.004 5.787c-.01.32.16 1.269.735 1.478.46.152.765-.217 1.04-.509 1.249-1.325 2.139-2.89 2.936-4.508.351-.714.655-1.453.95-2.194.218-.547.56-.816 1.177-.807l5.015.006c.148 0 .298.001.444.027.846.144 1.077.508.816 1.332-.412 1.296-1.212 2.375-1.993 3.457-.838 1.158-1.732 2.276-2.561 3.44-.763 1.063-.702 1.598.244 2.521Z"></path>
+                <path class="footer-list-link__path" fill="#CACACA" d="M22.5 0C10.074 0 0 10.074 0 22.5S10.074 45 22.5 45 45 34.926 45 22.5 34.926 0 22.5 0Zm11.413 24.933c1.049 1.025 2.158 1.989 3.1 3.119.417.5.81 1.017 1.11 1.598.427.83.04 1.739-.701 1.788l-4.61-.001c-1.19.098-2.138-.382-2.937-1.196-.637-.648-1.229-1.341-1.843-2.012a4.29 4.29 0 0 0-.83-.738c-.628-.41-1.174-.284-1.534.373-.367.668-.451 1.408-.486 2.151-.05 1.087-.378 1.371-1.468 1.422-2.33.11-4.542-.244-6.597-1.419-1.813-1.036-3.216-2.499-4.439-4.155-2.38-3.228-4.204-6.77-5.843-10.415-.368-.821-.099-1.26.807-1.277 1.504-.03 3.009-.026 4.513-.002.613.01 1.018.36 1.253.938.813 2 1.81 3.904 3.059 5.669.332.47.672.938 1.156 1.27.534.367.94.245 1.193-.35.16-.38.23-.785.265-1.19.12-1.392.134-2.782-.073-4.167-.129-.867-.616-1.427-1.48-1.59-.44-.084-.376-.247-.162-.498.372-.435.72-.704 1.415-.704h5.208c.821.16 1.005.529 1.117 1.356l.004 5.787c-.01.32.16 1.269.735 1.478.46.152.765-.217 1.04-.509 1.249-1.325 2.139-2.89 2.936-4.508.351-.714.655-1.453.95-2.194.218-.547.56-.816 1.177-.807l5.015.006c.148 0 .298.001.444.027.846.144 1.077.508.816 1.332-.412 1.296-1.212 2.375-1.993 3.457-.838 1.158-1.732 2.276-2.561 3.44-.763 1.063-.702 1.598.244 2.521Z"></path>
               </svg>
             </a>
           </li>
           <li class="footer-list__item">
-            <a class="link-reset footer-list__link" aria-label="Аккаунт Одноклассники">
+            <a class="link-reset footer-list__link footer-list-link" aria-label="Аккаунт Одноклассники">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 45 45">
-                <path fill="#CACACA" d="M19.279 14.986a3.359 3.359 0 1 0 6.718 0 3.359 3.359 0 0 0-6.718 0Z"></path>
-                <path fill="#CACACA" fill-rule="evenodd" d="M22.5 45C34.926 45 45 34.926 45 22.5S34.926 0 22.5 0 0 10.074 0 22.5 10.074 45 22.5 45Zm-7.988-30.014a8.125 8.125 0 1 1 16.251 0 8.125 8.125 0 0 1-16.25 0Zm16.3 12.305c-.103.083-2.053 1.623-5.306 2.286l4.91 4.866a2.21 2.21 0 1 1-3.122 3.127l-4.766-4.642-4.33 4.612a2.202 2.202 0 0 1-1.59.676 2.21 2.21 0 0 1-1.59-3.743l4.66-4.87c-3.344-.648-5.374-2.228-5.479-2.312a2.21 2.21 0 0 1 2.765-3.447c.02.016 2.143 1.61 5.564 1.613 3.42-.002 5.5-1.597 5.52-1.613a2.21 2.21 0 0 1 2.764 3.447Z" clip-rule="evenodd"></path>
+                <path class="footer-list-link__path" fill="#CACACA" d="M19.279 14.986a3.359 3.359 0 1 0 6.718 0 3.359 3.359 0 0 0-6.718 0Z"></path>
+                <path class="footer-list-link__path" fill="#CACACA" fill-rule="evenodd" d="M22.5 45C34.926 45 45 34.926 45 22.5S34.926 0 22.5 0 0 10.074 0 22.5 10.074 45 22.5 45Zm-7.988-30.014a8.125 8.125 0 1 1 16.251 0 8.125 8.125 0 0 1-16.25 0Zm16.3 12.305c-.103.083-2.053 1.623-5.306 2.286l4.91 4.866a2.21 2.21 0 1 1-3.122 3.127l-4.766-4.642-4.33 4.612a2.202 2.202 0 0 1-1.59.676 2.21 2.21 0 0 1-1.59-3.743l4.66-4.87c-3.344-.648-5.374-2.228-5.479-2.312a2.21 2.21 0 0 1 2.765-3.447c.02.016 2.143 1.61 5.564 1.613 3.42-.002 5.5-1.597 5.52-1.613a2.21 2.21 0 0 1 2.764 3.447Z" clip-rule="evenodd"></path>
               </svg>
             </a>
           </li>

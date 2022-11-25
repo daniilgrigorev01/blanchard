@@ -13,12 +13,12 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
-  color: #333333;
+  color: #333;
 }
 
 .contacts-addres__place {
   font-size: 14px;
-  color: #333333;
+  color: #333;
 }
 
 .contacts__form {
@@ -50,12 +50,12 @@
   padding-right: 24px;
   padding-left: 24px;
   height: 40px;
-  border: 1px solid #333333;
+  border: 1px solid #333;
   border-radius: 100px;
-  color: #333333;
-  -webkit-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
+  color: #333;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
 }
 
 .contacts-form__input::-webkit-input-placeholder {
@@ -95,12 +95,12 @@
   font-size: 12px;
   font-weight: 700;
   color: #9d5cd0;
-  -webkit-transition: color 0.2s linear, background-color 0.2s linear,
-    border-color 0.2s linear;
-  -o-transition: color 0.2s linear, background-color 0.2s linear,
-    border-color 0.2s linear;
-  transition: color 0.2s linear, background-color 0.2s linear,
-    border-color 0.2s linear;
+  -webkit-transition: color .2s linear, background-color .2s linear,
+    border-color .2s linear;
+  -o-transition: color .2s linear, background-color .2s linear,
+    border-color .2s linear;
+  transition: color .2s linear, background-color .2s linear,
+    border-color .2s linear;
 }
 
 .contacts-form__btn:active {
@@ -133,7 +133,7 @@
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
-  color: #333333;
+  color: #333;
 }
 
 .contacts-social__list {
@@ -157,9 +157,9 @@
   width: 100%;
   height: 100%;
   opacity: 1;
-  -webkit-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
 }
 
 .contacts-social-list__link::before {
@@ -172,9 +172,9 @@
   border: 1px solid #9d5cd0;
   border-radius: 100%;
   opacity: 0;
-  -webkit-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
 }
 
 .contacts-social-list__link:active::before {
@@ -322,9 +322,9 @@
     border: 2px solid #c283f3;
     border-radius: 100px;
     opacity: 0;
-    -webkit-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
   }
 
   .contacts-form__btn:focus-visible::before {
@@ -346,7 +346,7 @@
 
   .contacts-social-list__link:hover,
   .contacts-social-list__link:focus-visible {
-    opacity: 0.5;
+    opacity: .5;
   }
 }
 

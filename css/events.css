@@ -94,19 +94,19 @@
   margin-bottom: 50px;
   font-size: 16px;
   color: #9d5cd0;
-  -webkit-transition: color 0.2s linear;
-  -o-transition: color 0.2s linear;
-  transition: color 0.2s linear;
+  -webkit-transition: color .2s linear;
+  -o-transition: color .2s linear;
+  transition: color .2s linear;
 }
 
-.events-swiper__link span {
+.events-swiper-link__text {
   border-bottom: 1px solid #9d5cd0;
-  -webkit-transition: border-color 0.2s linear;
-  -o-transition: border-color 0.2s linear;
-  transition: border-color 0.2s linear;
+  -webkit-transition: border-color .2s linear;
+  -o-transition: border-color .2s linear;
+  transition: border-color .2s linear;
 }
 
-.events-swiper__link:hover span {
+.events-swiper__link:hover .events-swiper-link__text {
   border-color: #7943a4;
 }
 
@@ -114,12 +114,12 @@
   color: #7943a4;
 }
 
-.events-swiper__link:active span {
-  border-color: #333333;
+.events-swiper__link:active .events-swiper-link__text {
+  border-color: #333;
 }
 
 .events-swiper__link:active {
-  color: #333333;
+  color: #333;
 }
 
 .events__swiper .swiper-pagination-bullet-active {
@@ -132,7 +132,7 @@
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   margin: 0 8px;
 }
 
@@ -227,7 +227,7 @@
     position: relative;
   }
 
-  .events-swiper__link span {
+  .events-swiper-link__text {
     position: relative;
     z-index: 5;
   }
@@ -241,9 +241,9 @@
     left: 0;
     background-color: #9d5cd0;
     opacity: 0;
-    -webkit-transition: opacity 0.2s linear;
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear;
+    -webkit-transition: opacity .2s linear;
+    -o-transition: opacity .2s linear;
+    transition: opacity .2s linear;
   }
 
   .events-swiper__link:focus-visible::before {
@@ -254,7 +254,7 @@
     color: #fff;
   }
 
-  .events-swiper__link:focus-visible span {
+  .events-swiper__link:focus-visible .events-swiper-link__text {
     border-color: #fff;
   }
 
@@ -276,14 +276,14 @@
     border: 2px solid transparent;
     border-radius: 100%;
     background-color: #ececec;
-    color: #000000;
+    color: #000;
     opacity: 1;
     -webkit-transition-property: border-color, background-color, opacity;
     -o-transition-property: border-color, background-color, opacity;
     transition-property: border-color, background-color, opacity;
-    -webkit-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
     -webkit-transition-timing-function: linear;
     -o-transition-timing-function: linear;
     transition-timing-function: linear;
@@ -297,7 +297,7 @@
     left: 80px;
   }
 
-  .events__swiper-button-next:after,
+  .events__swiper-button-next::after,
   .events__swiper-button-prev::after {
     position: absolute;
     left: 43%;
@@ -370,7 +370,7 @@
     left: 135px;
   }
 
-  .events__swiper-button-next:after,
+  .events__swiper-button-next::after,
   .events__swiper-button-prev::after {
     font-size: 20px;
   }

@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  z-index: 5;
   top: -71px;
   left: 0;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,9 +101,9 @@
   font-weight: 700;
   line-height: 1;
   background-color: #9d5cd0;
-  -webkit-transition: background-color 0.2s linear;
-  -o-transition: background-color 0.2s linear;
-  transition: background-color 0.2s linear;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
 }
 
 .hero__link::before,
@@ -112,16 +112,16 @@
   position: absolute;
   border-radius: 100px;
   opacity: 0;
-  -webkit-transition: opacity 0.2s linear;
-  -o-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
 }
 
 .hero__link::before {
-  left: 2px;
   top: 2px;
   right: 2px;
   bottom: 2px;
+  left: 2px;
   outline: 3px solid #d1a9f0;
 }
 
@@ -178,10 +178,10 @@
   }
 
   .hero__link::before {
-    left: 3px;
     top: 3px;
     right: 3px;
     bottom: 3px;
+    left: 3px;
     outline: 4px solid #d1a9f0;
   }
 }
@@ -225,10 +225,10 @@
   }
 
   .hero__link::after {
-    left: -2px;
     top: -2px;
     right: -2px;
     bottom: -2px;
+    left: -2px;
     outline: 3px solid #c283f3;
   }
 
