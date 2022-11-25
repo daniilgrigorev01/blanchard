@@ -621,10 +621,6 @@
 }
 
 @media (min-width: 1440px) {
-  .header__top {
-    padding-top: 29px;
-  }
-
   .header-top__btn-open-menu {
     display: none;
   }
