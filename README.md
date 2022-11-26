@@ -15,6 +15,7 @@
 * Анимация смены фоновых изображений на первом экране сайта
 * Плавный скролл на мобильной версии сайта в блоке "Каталог"
 * Модальное окно в блоке "Галерея"
+* Отправка заявки с сайта на почту
 
 ## Использованные библиотеки
 
@@ -28,3 +29,4 @@
 * [JustValidate](https://just-validate.dev/) - валидация инпутов
 * [API Яндекс.Карт](https://yandex.ru/dev/maps/?p=realty) - карта для сайта
 * [dialog-polyfill.js](https://github.com/GoogleChrome/dialog-polyfill) - полифил для HTML-тега `<dialog>`
+* [PHPMailer](https://github.com/PHPMailer/PHPMailer) - библиотека для отправки почты с сайта

@@ -75,7 +75,48 @@ const validate = () => {
         },
         errorMessage: "Номер должен содержать 10 цифр",
       },
-    ]);
+    ])
+    .onSuccess((evt) => {
+      let formData = new FormData(evt.target);
+      let xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            let message = document.querySelector(".contacts__modal");
+
+            message.showModal();
+
+            message.classList.add(
+              "animate__animated",
+              "animate__zoomIn",
+              "is-open"
+            );
+            message.addEventListener("animationend", () => {
+              message.classList.remove("animate__animated", "animate__zoomIn");
+            });
+
+            setTimeout(function () {
+              message.classList.add("animate__animated", "animate__zoomOut");
+              message.addEventListener("animationend", () => {
+                message.classList.remove(
+                  "animate__animated",
+                  "animate__zoomOut",
+                  "is-open"
+                );
+              });
+
+              message.close();
+            }, 5000);
+          }
+        }
+      };
+
+      xhr.open("POST", "./mail.php", true);
+      xhr.send(formData);
+
+      evt.target.reset();
+    });
 };
 
 function changeBtn(params) {

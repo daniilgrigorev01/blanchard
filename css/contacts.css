@@ -191,6 +191,36 @@
   filter: grayscale(1);
 }
 
+.contacts__modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 15px;
+  padding: 0 20px;
+  border: 2px solid #9d5cd0;
+  border-radius: 100px;
+  background-color: #9d5cd0;
+  visibility: hidden;
+}
+
+.gallery__modal::-webkit-backdrop {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.gallery__modal::backdrop {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.contacts__modal.is-open {
+  visibility: visible;
+}
+
+.contacts-modal__text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .contacts {
     border-top: 1px solid #cacaca;
@@ -265,6 +295,10 @@
 
   .contacts-form__btn {
     padding: 14px 41px;
+  }
+
+  .contacts-modal__text {
+    font-size: 16px;
   }
 }
 
