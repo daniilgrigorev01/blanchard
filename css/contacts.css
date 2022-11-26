@@ -195,7 +195,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-left: 15px;
   padding: 0 20px;
+  width: 100%;
   border: 2px solid #9d5cd0;
   border-radius: 100px;
   background-color: #9d5cd0;
@@ -262,6 +268,12 @@
   .contacts-form__btn {
     padding: 14px 28px;
     font-size: 18px;
+  }
+
+  .contacts__modal {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
   }
 
   .contacts__social {
@@ -364,6 +376,10 @@
     opacity: 1;
   }
 
+  .contacts__modal {
+    width: 30%;
+  }
+
   .contacts__social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -404,6 +420,10 @@
 
   .contacts-form__inner:not(:nth-child(2)) {
     margin-right: 20px;
+  }
+
+  .contacts__modal {
+    width: 20%;
   }
 
   .contacts__social {
