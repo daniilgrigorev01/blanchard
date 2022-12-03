@@ -53,6 +53,7 @@ function setModal(params) {
       let targetModal = document.querySelector(`.gallery__modal[data-target="${modal}"]`);
 
       targetModal.showModal();
+      document.querySelector(".body").style.overflow = "hidden";
 
       targetModal.classList.add("animate__animated", "animate__zoomIn", "is-open");
       targetModal.addEventListener("animationend", () => {
@@ -62,16 +63,19 @@ function setModal(params) {
       btnsClose.forEach((btn) => {
         btn.addEventListener("click", function () {
           let btn = this.dataset.path;
-          let targetModal = document.querySelector(`.gallery__modal[data-target="${btn}"]`);
+          let targetModal = document.querySelector(
+            `.gallery__modal[data-target="${btn}"]`
+          );
 
           targetModal.classList.add("animate__animated", "animate__zoomOut");
           targetModal.addEventListener("animationend", () => {
-            targetModal.classList.remove("animate__animated", "animate__zoomOut");
+            targetModal.classList.remove( "animate__animated", "animate__zoomOut");
           });
 
           function closeModal() {
             targetModal.classList.remove("is-open");
             targetModal.close();
+            document.querySelector(".body").style.overflow = "auto";
           }
 
           setTimeout(closeModal, 400);

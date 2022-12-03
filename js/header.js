@@ -4,6 +4,7 @@ function openMenu(params) {
 
   btn.addEventListener("click", function () {
     menu.classList.add(`${params.activeClass}`);
+    document.querySelector(".body").style.overflow = "hidden";
   });
 }
 
@@ -14,6 +15,7 @@ function closeMenu(params) {
 
   btn.addEventListener("click", function () {
     menu.classList.remove(`${params.activeClass}`);
+    document.querySelector(".body").style.overflow = "auto";
   });
 
   link.forEach((el) => {

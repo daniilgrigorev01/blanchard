@@ -1,5 +1,5 @@
 function smoothScroll(params) {
-  document.querySelectorAll(`.${params.linkClass}`).forEach((link) => {
+  document.querySelectorAll(`.${params.scrollClass}`).forEach((link) => {
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
 
@@ -16,5 +16,5 @@ function smoothScroll(params) {
 }
 
 smoothScroll({
-  linkClass: "header-top-nav__link",
+  scrollClass: "smooth-scroll-js",
 });
